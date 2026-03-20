@@ -1,7 +1,18 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(90deg, #A8CABA 0%, #5D4157 100%, #A8CABA 0%);
     background-size: 4000% 4000%;
     animation: BackDrop 60s ease-in-out infinite;
+}
+
+main {
+  flex: 1; /* push footer down */
 }
 
 @keyframes BackDrop {
@@ -23,6 +34,11 @@ div.info-bracket {
     text-align: top left;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.5);
+}
+.fix-float::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 ul {
@@ -47,4 +63,58 @@ ul li a {
 
 ul li a:hover {
     background-color: #111111;
+}
+
+.socials{
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    
+}
+.wrapper1{
+    margin-left: 2cm;
+}
+.wrapper1 .button{
+    display: inline-block;
+    height:60px;
+    width:60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: rgb(5, 75, 167);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow:0px 10px 10px rgba(0,0,0,0.1);
+    transition: ease;
+}
+
+.wrapper1 .button:hover{
+    width: 200px;
+}
+.wrapper1 .button .icon{
+    display:inline-block;
+    height:60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height:60px;
+}
+
+.wrapper1 .button .icon i{
+    font-size: 30px;
+    line-height: 60px;
+
+}
+.wrapper1 .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.footer-section{
+    background-color: black;
+    padding: 40px ;
+    border-radius: 15px;
+    color: white;
 }

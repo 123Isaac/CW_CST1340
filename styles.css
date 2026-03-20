@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(90deg, #A8CABA 0%, #5D4157 100%, #A8CABA 0%);
+    background-size: 4000% 4000%;
+    animation: BackDrop 60s ease-in-out infinite;
+}
+
+@keyframes BackDrop {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+div.info-bracket {
+    border: 3px double rgb(255, 255, 255);
+    max-width: 1000px;
+    float: right;
+    text-align: top left;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(199, 106, 0);
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}

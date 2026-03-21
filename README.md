@@ -22,3 +22,5 @@ Grace Benita Nalubwama- M01083273
     I got reference from Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
 
     And then i put the animation inside the infinite scroll class to enable all it's elements aka the cards to follow the co-ordinates. Then i used some images and put them inside the cards, ensuring that they didnt spill out and took the cards shape as seen in .cards omg{css}.
+
+    I did find an issue as the cards would glitch and delay to show again at the start of the loop in the right corner, so i just added more cards to fill out the space so that the process looked seemless.

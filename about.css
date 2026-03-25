@@ -1,0 +1,101 @@
+/* Dark & Moody About Us Box */
+.about-box {
+  border: 2px solid #444;
+  padding: 25px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #69299a, #530e2b);
+  box-shadow: 0 6px 25px rgba(133, 31, 86, 0.8);
+  color: #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-box h2 {
+  text-align: center;
+  color: #f5429e;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  text-shadow: 0 0 6px #5b177a;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  line-height: 1.8;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9);
+}
+
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: linear-gradient(white,pink);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section h1 {
+  color: #ff66cc;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.table-box {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 0, 255, 0.05);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #800080;
+  color: #ffccff;
+}
+
+td {
+  background: #1a001f;
+}
+
+tr:nth-child(even) td {
+  background: #2a0033;
+}
+
+tr:hover td {
+  background: #ff66cc;
+  color: black;
+  transition: 0.3s;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="stylesheet.xsl" type="text/xsl"?>
+<books>
+    <book id="1">
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <genre>Fantasy</genre>
+        <price>19.9</price>
+        <summary>A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.</summary>
+        <image>images\fantasy\Harry_potter.jpeg</image>
+    </book>
+    <book id="2">
+        <title>IT</title>
+        <author>Stephen King</author>
+        <year>1986</year>
+        <genre>Fiction</genre>
+        <price>20.9</price>
+        <summary>A novel about a group of children who face a supernatural entity in their small town.</summary>
+        <image>images\fiction\IT.png</image>
+    </book>
+    <book id="3">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <year>1960</year>
+        <genre>Fiction</genre>
+        <price>18.5</price>
+        <summary>A novel about racial injustice in the Deep South, seen through the eyes of a young girl.</summary>
+        <image>images\fiction\TKAMB.png</image>
+    </book>
+</books>

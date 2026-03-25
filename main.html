@@ -1,159 +1,188 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
-    <p style="font-family: Arial, sans-serif; font-size: 30px; color: grey; text-align: center;">opening hours!</p>
-    <table style="border-collapse: collapse; width: 50%; font-family: Arial, sans-serif; font-size: 14px; color: black; background-color: rgba(42, 119, 133, 0.901); margin: 0 auto;">
-        <tr>
-            <th style="border: 1px solid grey; padding: 8px; text-align: left;">Day</th>
-            <th style="border: 1px solid grey; padding: 8px; text-align: left;">Opening Hours</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Monday</td>
-            <td style="border: 1px solid grey; padding: 8px;">9:00 AM - 7:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Tuesday</td>
-            <td style="border: 1px solid grey; padding: 8px;">9:00 AM - 7:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Wednesday</td>
-            <td style="border: 1px solid grey; padding: 8px;">9:00 AM - 7:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Thursday</td>
-            <td style="border: 1px solid grey; padding: 8px;">9:00 AM - 7:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Friday</td>
-            <td style="border: 1px solid grey; padding: 8px;">9:00 AM - 2:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Saturday</td>
-            <td style="border: 1px solid grey; padding: 8px;">10:00 AM - 1:00 PM</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid grey; padding: 8px;">Sunday</td>
-            <td style="border: 1px solid grey; padding: 8px;">Closed</td>
-        </tr>
-    </table>
+    <main>
+        <div class="carousel">
+            <!--Handles overflow-->
 
-    <link rel="stylesheet" href="style.css">
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-
-    <body>
-        <main>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="Books.xml">Books</a></li>
-            </ul>
-            <div class="fix-float">
-                <!--I removed floats because  my footer though page was empty-->
-                <div class="info-bracket" style="float: left; padding: 10px; text-align: center; margin: 0px 0 0 50px;">
-                    <h3>Top Genres</h3>
-                    <!--Add code later in project to display Highest bought Book Here-->
-                    <ul style="width: 100px;">
-                        <li>Fantasy</li>
-                        <li>Science Fiction</li>
-                        <li>Mystery</li>
-                        <li>Romance</li>
-                        <li>Non-Fiction</li>
-                    </ul>
+            <div class="infinite_scroll">
+                <div class="card">
+                    <img src="images/Auto-biographies/Malala.jpeg" alt="Malala">
                 </div>
-                <div class="info-bracket" style="float: right; padding: 10px; text-align: center; margin: 0px 50px 0px 50px;">
-                    <h3>Opening Times</h3>
-                    <table>
-                        <tr>
-                            <th>Day</th>
-                            <th>Opening Time</th>
-                            <th>Closing Time</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>10:00 AM</td>
-                            <td>5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>Closed</td>
-                            <td></td>
-                        </tr>
-                    </table>
+
+                <div class="card">
+                    <img src="images/Auto-biographies/Obama.jpeg" alt="Obama">
                 </div>
-                <div class="info-bracket">
-                    Bookstore information goes here is a really cool book store located in <a href="www.google.com">here(link for location)</a>
-                    <img style="float: right; object-fit:contain" width="300" height="400" src="images\CLUB4.png" alt="Placeholder image">
+                <div class="card">
+                    <img src="images/comics/Supergirl.jpeg" alt="Supergirl">
+                </div>
+                <div class="card">
+                    <img src="images/fantasy/Hurricane_wars.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/manga/JJK.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/Sci-fi/Frankenstine.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/fantasy/Harry_potter.jpeg" alt="Potter">
+                </div>
+                <div class="card">
+                    <img src="images/Sci-fi/40 best books to read before you die.jpeg" alt="1984">
+                </div>
+                <div class="card">
+                    <img src="images/fiction/Red_Queen.jpeg" alt="red queen">
                 </div>
             </div>
-        </main>
-        <footer>
-            <section class="footer-section">
-                <h2>Contat Us</h2>
-                <section class="socials">
-                    <div class="wrapper1">
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fa fa-facebook-f"></i>
-                            </div>
-                            <span>Facebook</span>
-                        </div>
 
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fa fa-youtube-play"></i>
-                            </div>
-                            <span>Youtube</span>
-                        </div>
+            <div aria-hidden class="infinite_scroll">
+                <!--for looping-->
+                <div class="card">
+                    <img src="images/Auto-biographies/Malala.jpeg" alt="Malala">
+                </div>
 
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fa fa-twitter"></i>
-                            </div>
-                            <span>twitter</span>
-                        </div>
+                <div class="card">
+                    <img src="images/Auto-biographies/Obama.jpeg" alt="Obama">
+                </div>
+                <div class="card">
+                    <img src="images/comics/Supergirl.jpeg" alt="Supergirl">
+                </div>
+                <div class="card">
+                    <img src="images/fantasy/Hurricane_wars.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/manga/JJK.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/Sci-fi/Frankenstine.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/fantasy/Harry_potter.jpeg" alt="Potter">
+                </div>
+                <div class="card">
+                    <img src="images/Sci-fi/40 best books to read before you die.jpeg" alt="1984">
+                </div>
+                <div class="card">
+                    <img src="images/fiction/Red_Queen.jpeg" alt="red queen">
+                </div>
+            </div>
 
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fa fa-whatsapp"></i>
-                            </div>
-                            <span>Whatsapp</span>
+        </div>
+
+        <ul>
+            <li><a href="main.html">Home</a></li>
+        </ul>
+        <div class="fix-float">
+            <!--I removed floats because  my footer though page was empty-->
+            <div class="info-bracket" style="float: left; padding: 10px; text-align: center; margin: 0px 0 0 50px;">
+                <h3>Top Genres</h3>
+                <!--Add code later in project to display Highest bought Book Here-->
+                <ul style="width: 100px;">
+                    <li>Fantasy</li>
+                    <li>Science Fiction</li>
+                    <li>Mystery</li>
+                    <li>Romance</li>
+                    <li>Non-Fiction</li>
+                </ul>
+            </div>
+            <div class="info-bracket" style="float: right; padding: 10px; text-align: center; margin: 0px 50px 0px 50px;">
+                <h3>Opening Times</h3>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 AM</td>
+                        <td>5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info-bracket">
+                Bookstore information goes here is a really cool book store located in <a href="www.google.com">here(link for location)</a>
+                <img style="float: right; object-fit:contain" width="300" height="400" src="images\CLUB4.png" alt="Placeholder image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer-section">
+            <h2>Contat Us</h2>
+            <div class="socials">
+                <div class="wrapper1">
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-facebook-f"></i>
                         </div>
+                        <span>Facebook</span>
                     </div>
-                </section>
-            </section>
-        </footer>
-    </body>
 
-    </html>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-youtube-play"></i>
+                        </div>
+                        <span>Youtube</span>
+                    </div>
+
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <span>twitter</span>
+                    </div>
+
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <span>Whatsapp</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

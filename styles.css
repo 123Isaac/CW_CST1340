@@ -18,6 +18,15 @@ body {
     overflow-x: auto; /*makes carousel scrollable*/
     
 }
+.about_animation{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    background-color: antiquewhite;
+    color: pink;
+    border-radius: 15px;
+}
 .carousel::-webkit-scrollbar{
     display: none; /*hide scrollbar*/
 
@@ -152,6 +161,7 @@ ul li a:hover {
 .footer-section{
     background-color: black;
     padding: 40px ;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     color: white;
 }

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
+
 <body>
-    <div class="carousel"><!--Handles overflow-->
+    <div class="carousel">
+        <!--Handles overflow-->
         <div class="infinite_scroll">
-            <div class="card">1</div>
+            <div class="card"><img id="1"></div>
             <div class="card">2</div>
             <div class="card">3</div>
             <div class="card">4</div>
@@ -33,4 +36,22 @@
         </div>
     </div>
 </body>
+
+<script>
+    var htp = new XMLHttpRequest();
+    htp.onreadystatechange = function() {
+        if (htp.readyState === 4 && htp.status === 200) {
+            load_xml(this);
+        }
+    };
+    htp.open("GET", "Books.xml", true);
+    htp.send();
+
+    function load_xml(xml) {
+        var xmlDoc = xml.responseXML;
+        var x = xmlDoc.getElementsByTagName("book");
+        document.getElementById("1").src = x[0].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+    }
+</script>
+
 </html>

@@ -1,2 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="stylesheet.xsl" type="text/xsl"?>
+<books>
+    <book id="1">
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <genre>Fantasy</genre>
+        <price>19.9</price>
+        <summary>A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.</summary>
+    </book>
+    <book id="2">
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <year>1925</year>
+        <genre>Fiction</genre>
+        <price>15.9</price>
+        <summary>A story of the Jazz Age and the American Dream.</summary>
+    </book>
+    <book id="3">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <year>1960</year>
+        <genre>Fiction</genre>
+        <price>18.5</price>
+        <summary>A novel about racial injustice in the Deep South, seen through the eyes of a young girl.</summary>
+    </book>
+    <book id="4">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+        <genre>Fantasy</genre>
+        <price>22.0</price>
+        <summary>A hobbit embarks on a quest to reclaim a treasure guarded by a dragon.</summary>
+    </book>
+    <book id="5">
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <year>1813</year>
+        <genre>Romance</genre>
+        <price>12.5</price>
+        <summary>A classic novel about love and social standing in 19th century England.</summary>
+    </book>
+</books>

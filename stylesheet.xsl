@@ -11,12 +11,16 @@
                         <th>Title</th>
                         <th>Author</th>
                         <th>Year</th>
+                        <th>Genre</th>
                     </tr>
-                    <xsl:for-each select="catalog/book">
+                    <xsl:for-each select="bookstore/book">
                         <tr>
                             <td><xsl:value-of select="title"/></td>
                             <td><xsl:value-of select="author"/></td>
                             <td><xsl:value-of select="year"/></td>
+                            <td>
+                            <xsl:value-of select="/bookstore/categories/category[@id=current()/genre/@ref]"/>
+                            </td>
                         </tr>
                     </xsl:for-each>
                 </table>

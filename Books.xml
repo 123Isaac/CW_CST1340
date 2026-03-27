@@ -1,31 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="stylesheet.xsl" type="text/xsl"?>
-<books>
+<?xml-stylesheet href="xslcards.xsl" type="text/xsl" ?>
+
+<!--<?xml-stylesheet href="stylesheet.xsl" type="text/xsl"?>-->
+
+<bookstore>
+    <categories>
+        <category id="c1">Fiction</category>
+        <category id="c2">Fantasy</category>
+        <category id="c3">Comics</category>
+        <category id="c4">Manga</category>
+    </categories>
+
     <book id="1">
-        <title>Harry Potter and the Sorcerer's Stone</title>
-        <author>J.K. Rowling</author>
-        <year>1997</year>
-        <genre>Fantasy</genre>
-        <price>19.9</price>
-        <summary>A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.</summary>
-        <image>images\fantasy\Harry_potter.jpeg</image>
-    </book>
-    <book id="2">
-        <title>IT</title>
+        <title>It</title>
         <author>Stephen King</author>
         <year>1986</year>
-        <genre>Fiction</genre>
+        <genre ref="c1"/>
         <price>20.9</price>
-        <summary>A novel about a group of children who face a supernatural entity in their small town.</summary>
-        <image>images\fiction\IT.png</image>
+        <summary>A group of children in Derry, Maine confronts a terrifying shape-shifting entity that returns every 27 years.</summary>
+        <image>images/fiction/It.jpeg</image>
     </book>
+
+    <book id="2">
+        <title>The Housemaid</title>
+        <author>Freida McFadden</author>
+        <year>2022</year>
+        <genre ref="c1"/>
+        <price>16.5</price>
+        <summary>A woman takes a job as a housemaid for a wealthy family, only to uncover dark secrets hidden within the house.</summary>
+        <image>images/fiction/The_Housemaid.jpeg</image>
+    </book>
+
     <book id="3">
+        <title>The Inmate</title>
+        <author>Freida McFadden</author>
+        <year>2022</year>
+        <genre ref="c1"/>
+        <price>17.0</price>
+        <summary>A nurse working in a prison discovers that one of the inmates is someone from her past, leading to shocking revelations.</summary>
+        <image>images/fiction/The_Inmate.jpeg</image>
+    </book>
+
+    <book id="4">
+        <title>Red Queen</title>
+        <author>Victoria Aveyard</author>
+        <year>2015</year>
+        <genre ref="c1"/>
+        <price>18.0</price>
+        <summary>In a divided world where blood determines status, a common girl discovers she has powers reserved for the elite.</summary>
+        <image>images/fiction/Red_Queen.jpeg</image>
+    </book>
+
+    <book id="5">
         <title>To Kill a Mockingbird</title>
         <author>Harper Lee</author>
         <year>1960</year>
-        <genre>Fiction</genre>
+        <genre ref="c1"/>
         <price>18.5</price>
-        <summary>A novel about racial injustice in the Deep South, seen through the eyes of a young girl.</summary>
-        <image>images\fiction\TKAMB.png</image>
+        <summary>A young girl in the American South witnesses her father defend a Black man falsely accused of a crime, exposing deep racial injustice.</summary>
+        <image>images/fiction/TKAMB.png</image>
     </book>
-</books>
+
+    <book id="6">
+            <title>Children of Blood and Bone</title>
+            <author>Tomi Adeyemi</author>
+            <year>2018</year>
+            <genre ref="c2"/>
+            <price>19.99</price>
+            <summary>A young girl embarks on a journey to restore magic in a land where it has been lost.</summary>
+            <image>images/fantasy/Children of Blood_and_Bone.jpeg</image>
+    </book>
+
+    <book id="7">
+        <title>Harry Potter and the Philosopher's Stone</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <genre ref="c2"/>
+        <price>19.9</price>
+        <summary>A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.</summary>
+        <image>images/fantasy/Harry_potter.jpeg</image>
+    </book>
+
+    <book id="8">
+        <title>Hurricane Wars</title>
+        <author>Thea Guazon</author>
+        <year>2020</year>
+        <genre ref="c2"/>
+        <price>17.5</price>
+        <summary>A high-stakes adventure in a world torn apart by elemental storms.</summary>
+        <image>images/fantasy/Hurricane_wars.jpeg</image>
+    </book>
+
+    <book id="9">
+        <title>Percy Jackson and the Lightning Thief</title>
+        <author>Rick Riordan</author>
+        <year>2005</year>
+        <genre ref="c2"/>
+        <price>18.0</price>
+        <summary>A boy discovers he is the son of Poseidon and must stop a war among the gods.</summary>
+        <image>images/fantasy/Percy_Jackson.jpeg</image>
+    </book>
+
+    <book id="10">
+        <title>The Troubled Girls of Drago Mirror Academy</title>
+        <author>Unknown</author>
+        <year>2021</year>
+        <genre ref="c2"/>
+        <price>16.5</price>
+        <summary>A magical academy for troubled girls hides secrets darker than its enchanted walls.</summary>
+        <image>images/fantasy/DragoMirror.jpeg</image>
+    </book>
+
+</bookstore>

@@ -1,0 +1,45 @@
+.book_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* center cards nicely */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center;
+    width: 220px; /* slightly bigger */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+    background-color: rgb(201, 194, 194);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* subtle hover effect */
+}
+
+.pic img {
+    width: 180px;   
+    height: 280px;  /* maintain book proportions */
+    object-fit: cover; /* crop nicely if image ratio varies */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    height: 40px; /* limit title height to avoid stretching */
+    overflow: hidden;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 2px 0;
+    color: rgb(16, 15, 15);
+}

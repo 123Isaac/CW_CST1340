@@ -1,70 +1,59 @@
-/* Dark & Moody About Us Box */
+
+
+
+/* About Box */
 .about-box {
-  border: 2px solid #444;
+  border: 2px solid #5b177a;
   padding: 25px;
   max-width: 600px;
   margin: 40px auto;
   border-radius: 15px;
-  background: linear-gradient(145deg, #69299a, #530e2b);
-  box-shadow: 0 6px 25px rgba(133, 31, 86, 0.8);
-  color: #eee;
+  background: #faf5ff; /* very light purple */
+  box-shadow: 0 6px 20px rgba(91, 23, 122, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .about-box h2 {
   text-align: center;
-  color: #f5429e;
+  color: #5b177a;
   font-family: 'Georgia', serif;
-  font-size: 20px;
-  text-shadow: 0 0 6px #5b177a;
   margin-bottom: 15px;
 }
 
 .about-box p {
   line-height: 1.8;
-  color: #ddd;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
+  color: #444;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
 }
 
+/* Hover */
 .about-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 25px rgba(91, 23, 122, 0.5);
 }
 
-body {
-  background-color: #121212;
-  font-family: Arial, sans-serif;
-}
-
-
-body {
-  background: linear-gradient(white,pink);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
+/* Section */
 .section {
   text-align: center;
   padding: 50px 20px;
 }
 
 .section h1 {
-  color: #ff66cc;
-  font-size: 40px;
-  margin-bottom: 20px;
+  color: #5b177a;
+  font-size: 36px;
 }
 
+/* Table Box */
 .table-box {
   display: inline-block;
   padding: 20px;
   border-radius: 15px;
-  background: rgba(255, 0, 255, 0.05);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+  background: #681459;
+  box-shadow: 0 0 15px rgba(91, 23, 122, 0.3);
 }
 
+/* Table */
 table {
   border-collapse: collapse;
   width: 400px;
@@ -76,26 +65,27 @@ th, td {
 }
 
 th {
-  background: #800080;
-  color: #ffccff;
+  background: #5b177a;
+  color: rgb(141, 18, 163);
 }
 
 td {
-  background: #1a001f;
+  background: #b6329e;
 }
 
 tr:nth-child(even) td {
-  background: #2a0033;
+  background: #efe0ff;
 }
 
 tr:hover td {
-  background: #ff66cc;
+  background: #d4b3ff;
   color: black;
   transition: 0.3s;
 }
 
+/* Note */
 .note {
   margin-top: 15px;
   font-size: 14px;
-  color: #ccc;
+  color: #666;
 }

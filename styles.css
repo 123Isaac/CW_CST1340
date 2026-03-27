@@ -239,6 +239,9 @@ ul li a:hover {
 .wrapper1 .button:hover {
     width: 200px;
 }
+.wrapper1 .button:hover span {
+    opacity: 1;           /* make the text visible */
+}
 
 .wrapper1 .button .icon {
     display: inline-block;

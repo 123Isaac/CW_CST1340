@@ -128,7 +128,7 @@
         <year>2012</year>
         <genre ref="c3"/>
         <price>20.5</price>
-        <selling>9000</selling>
+        <numberOfSales>9000</numberOfSales>
         <summary>A magical academy for troubled girls hides secrets darker than its enchanted walls.</summary>
         <image>images/comics/Batman.jpeg</image>
     </book>
@@ -138,7 +138,7 @@
         <year>2016</year>
         <genre ref="c3"/>
         <price>22.0</price>
-        <selling>12000</selling>
+        <numberOfSales>12000</numberOfSales>
         <summary>The king of Wakanda faces challenges that test both his heart and his crown.</summary>
         <image>images/comics/Blackpanther.jpeg</image>
     </book>
@@ -149,7 +149,7 @@
         <year>2014</year>
         <genre ref="c3"/>
         <price>18.5</price>
-        <selling>8500</selling>
+        <numberOfSales>8500</numberOfSales>
         <summary>A weather-controlling mutant must learn to master her powers to save her friends.</summary>
         <image>images/comics/Storm.jpeg</image>
     </book>
@@ -160,7 +160,7 @@
         <year>2018</year>
         <genre ref="c3"/>
         <price>19.0</price>
-        <selling>9500</selling>
+        <numberOfSales>9500</numberOfSales>
         <summary>Fighting for justice on Earth, she discovers what it really means to be a hero.</summary>
         <image>images/comics/Supergirl.jpeg</image>
     </book>
@@ -171,7 +171,7 @@
         <year>2015</year>
         <genre ref="c3"/>
         <price>21.5</price>
-        <selling>11000</selling>
+        <numberOfSales>11000</numberOfSales>
         <summary>The Amazon princess battles gods and mortals alike while defending truth and peace.</summary>
         <image>images/comics/WonderWoman.jpeg</image>
     </book>
@@ -182,7 +182,7 @@
         <year>2013</year>
         <genre ref="c3"/>
         <price>23.0</price>
-        <selling>13000</selling>
+        <numberOfSales>13000</numberOfSales>
         <summary>A team of mutants fights for a world that fears and hates them, balancing heroism and conflict.</summary>
         <image>images/comics/Xmen.jpeg</image>
     </book>
@@ -192,7 +192,7 @@
         <year>2002</year>
         <genre ref="c4"/>
         <price>23.0</price>
-        <selling>45000</selling>
+        <numberOfSales>45000</numberOfSales>
         <summary>Humanity fights for survival against giant humanoid Titans that threaten to wipe out civilization.</summary>
         <image>images/manga/AOT.jpeg</image>
     </book>
@@ -203,7 +203,7 @@
         <year>2019</year>
         <genre ref="c4"/>
         <price>20.0</price>
-        <selling>12000</selling>
+        <numberOfSales>12000</numberOfSales>
         <summary>A gripping story of loss and redemption as the protagonist Hokaru faces life-and-death challenges.</summary>
         <image>images/manga/Hikaru.jpeg</image>
     </book>
@@ -214,7 +214,7 @@
         <year>2018</year>
         <genre ref="c4"/>
         <price>21.5</price>
-        <selling>38000</selling>
+        <numberOfSales>38000</numberOfSales>
         <summary>A high-stakes supernatural battle where sorcerers fight curses to protect the innocent.</summary>
         <image>images/manga/JJK.jpeg</image>
     </book>
@@ -225,7 +225,7 @@
         <year>1999</year>
         <genre ref="c4"/>
         <price>22.0</price>
-        <selling>50000</selling>
+        <numberOfSales>50000</numberOfSales>
         <summary>The journey of a young ninja striving to gain recognition and protect his village while chasing his dream.</summary>
         <image>images/manga/Naruto.jpeg</image>
     </book>
@@ -236,7 +236,7 @@
         <year>2019</year>
         <genre ref="c4"/>
         <price>19.5</price>
-        <selling>25000</selling>
+        <numberOfSales>25000</numberOfSales>
         <summary>A master spy builds a fake family to complete a secret mission, but unexpected bonds form along the way.</summary>
         <image>images/manga/Spy x Family, Vol_ 2 (2).jpeg</image>
     </book>
@@ -246,7 +246,7 @@
         <year>2019</year>
         <genre ref="c5"/>
         <price>30</price>
-        <selling>25000</selling>
+        <numberOfSales>25000</numberOfSales>
         <summary>Will Smith shares his journey from a challenging childhood to global superstardom, exploring lessons in resilience, discipline, and self-belief.</summary>
         <image>images/Auto-biographies/Will.jpeg</image>
     </book>
@@ -257,7 +257,7 @@
         <year>2022</year>
         <genre ref="c5"/>
         <price>28</price>
-        <selling>18000</selling>
+        <numberOfSales>18000</numberOfSales>
         <summary>Viola Davis opens up about her rise from poverty and abuse to becoming an acclaimed actress, sharing her personal struggles and triumphs.</summary>
         <image>images/Auto-biographies/Viola.jpeg</image>
     </book>
@@ -268,7 +268,7 @@
         <year>2020</year>
         <genre ref="c5"/>
         <price>32</price>
-        <selling>50000</selling>
+        <numberOfSales>50000</numberOfSales>
         <summary>Barack Obama recounts his early political career and presidency, offering a detailed and reflective account of the challenges, decisions, and hope that shaped his time in office.</summary>
         <image>images/Auto-biographies/Obama.jpeg</image>
     </book>
@@ -279,7 +279,7 @@
         <year>2013</year>
         <genre ref="c5"/>
         <price>25</price>
-        <selling>35000</selling>
+        <numberOfSales>35000</numberOfSales>
         <summary>Malala Yousafzai shares her personal journey of courage, resilience, and advocacy for girls’ education in Pakistan and around the world.</summary>
         <image>images/Auto-biographies/Malala.jpeg</image>
     </book>
@@ -289,7 +289,7 @@
         <year>2013</year>
         <genre ref="c5"/>
         <price>25</price>
-        <selling>22000</selling>
+        <numberOfSales>22000</numberOfSales>
         <summary>Basetsana Kumalo recounts her inspiring journey from beauty queen to successful entrepreneur and philanthropist, sharing lessons of perseverance, hope, and giving back.</summary>
         <image>images/Auto-biographies/Hope_Journey.jpeg</image>
     </book>
@@ -299,7 +299,7 @@
         <year>2013</year>
         <genre ref="c6"/>
         <price>25</price>
-        <selling>22000</selling>
+        <numberOfSales>22000</numberOfSales>
         <summary>A mysterious adventure through a magical forest where lost children must confront the shadows of their past to find their way home.</summary>
         <image>images/Sci-fi/27 New Young Adult Sci-Fi_Fantasy Books To Get Your Hands On This Spring.jpeg</image>
     </book>
@@ -310,7 +310,7 @@
         <year>1818</year>
         <genre ref="c6"/>
         <price>20</price>
-        <selling>40000</selling>
+        <numberOfSales>40000</numberOfSales>
         <summary>Dr. Victor Frankenstein defies nature and creates life, only to face the terrifying consequences of playing god in a world unprepared for his creation.</summary>
         <image>images/Sci-fi/Frankenstine.jpeg</image>
     </book>
@@ -321,7 +321,7 @@
         <year>1988</year>
         <genre ref="c6"/>
         <price>22</price>
-        <selling>35000</selling>
+        <numberOfSales>35000</numberOfSales>
         <summary>A young shepherd embarks on a journey across deserts and dreams to discover his personal legend and the true meaning of life.</summary>
         <image>images/Sci-fi/The Alchemist cover design by Jim Tierney; art….jpeg</image>
     </book>
@@ -332,7 +332,7 @@
         <year>1949</year>
         <genre ref="c6"/>
         <price>18</price>
-        <selling>45000</selling>
+        <numberOfSales>45000</numberOfSales>
         <summary>In a totalitarian future, Winston Smith struggles to retain his individuality and freedom under the watchful eye of Big Brother.</summary>
         <image>images/Sci-fi/40 best books to read before you die.jpeg</image>
     </book>
@@ -343,7 +343,7 @@
         <year>2015</year>
         <genre ref="c6"/>
         <price>24</price>
-        <selling>27000</selling>
+        <numberOfSales>27000</numberOfSales>
         <summary>In a post-apocalyptic world, survivors must navigate a city overrun by zombie-like creatures, testing their courage, loyalty, and humanity.</summary>
         <image>images/Sci-fi/colour pages _ colour pencil _ drawing _ books aesthetic.jpeg</image>
     </book>

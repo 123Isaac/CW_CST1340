@@ -87,12 +87,12 @@ div.info-bracket {
   clear: both;
 }
 
-ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(199, 106, 0);
+    background-color: rgb(16, 16, 16);
 }
 
 ul li {
@@ -108,56 +108,62 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #111111;
+    background-color: #928a8a;
+}
+.socials {
+    display: flex;
+    justify-content: center; /* center the whole row */
+    align-items: center;     /* vertically center buttons */
+    gap: 10px;               /* spacing between buttons */
 }
 
-.socials{
-    display:flex;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-    
+.wrapper1 {
+    display: flex;
+    gap: 10px; /* spacing between buttons */
 }
-.wrapper1{
-    margin-left: 2cm;
-}
-.wrapper1 .button{
-    display: inline-block;
-    height:60px;
-    width:60px;
-    margin: 0 5px;
+
+.wrapper1 .button {
+    display: flex;             /* icon + text in a row */
+    align-items: center;
+    width: 60px;               /* small circle */
+    height: 60px;
     overflow: hidden;
     background-color: rgb(5, 75, 167);
     border-radius: 50px;
     cursor: pointer;
-    box-shadow:0px 10px 10px rgba(0,0,0,0.1);
-    transition: ease;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: width 0.3s ease;
 }
 
-.wrapper1 .button:hover{
-    width: 200px;
-}
-.wrapper1 .button .icon{
-    display:inline-block;
-    height:60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height:60px;
+.wrapper1 .button:hover {
+    width: 200px;              /* expand to show text */
 }
 
-.wrapper1 .button .icon i{
+.wrapper1 .button .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;            /* prevent shrinking */
+}
+.wrapper1 .button .icon i {
     font-size: 30px;
-    line-height: 60px;
-
 }
-.wrapper1 .button span{
+
+.wrapper1 .button span {
     font-size: 20px;
     font-weight: 500;
-    line-height: 60px;
     margin-left: 10px;
+    white-space: nowrap;
+    opacity: 0;                /* hide initially */
+    transition: opacity 0.3s ease;
 }
+
+.wrapper1 .button:hover span {
+    opacity: 1;                /* show on hover */
+}
+
 .footer-section{
     background-color: black;
     padding: 40px ;

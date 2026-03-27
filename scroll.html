@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-=======
 
->>>>>>> ec3c073c707404afe442a85168ecb4b30d6dcbee
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-<<<<<<< HEAD
-    
-</head>
-<body>
-    <div class="carousel"><!--Handles overflow-->
-        <div class="infinite_scroll">
-            <div class="card">1</div>
-=======
 
 </head>
 
@@ -24,49 +13,55 @@
     <div class="carousel">
         <!--Handles overflow-->
         <div class="infinite_scroll">
-            <div class="card"><img id="1"></div>
->>>>>>> ec3c073c707404afe442a85168ecb4b30d6dcbee
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-        </div>
-        <div aria-hidden class="infinite_scroll">
             <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-        </div>
-    </div>
-</body>
-<<<<<<< HEAD
-=======
 
-<script>
-    var htp = new XMLHttpRequest();
-    htp.onreadystatechange = function() {
-        if (htp.readyState === 4 && htp.status === 200) {
-            load_xml(this);
-        }
-    };
-    htp.open("GET", "Books.xml", true);
-    htp.send();
+            </head>
 
-    function load_xml(xml) {
-        var xmlDoc = xml.responseXML;
-        var x = xmlDoc.getElementsByTagName("book");
-        document.getElementById("1").src = x[0].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-    }
-</script>
+            <body>
+                <div class="carousel">
+                    <!--Handles overflow-->
+                    <div class="infinite_scroll">
+                        <div class="card"><img id="1"></div>
+                        <div class="card">2</div>
+                        <div class="card">3</div>
+                        <div class="card">4</div>
+                        <div class="card">5</div>
+                        <div class="card">6</div>
+                        <div class="card">4</div>
+                        <div class="card">5</div>
+                        <div class="card">6</div>
+                    </div>
+                    <div aria-hidden class="infinite_scroll">
+                        <div class="card">1</div>
+                        <div class="card">2</div>
+                        <div class="card">3</div>
+                        <div class="card">4</div>
+                        <div class="card">5</div>
+                        <div class="card">6</div>
+                        <div class="card">4</div>
+                        <div class="card">5</div>
+                        <div class="card">6</div>
+                    </div>
+                </div>
+            </body>
 
->>>>>>> ec3c073c707404afe442a85168ecb4b30d6dcbee
+            <script>
+                function loadDoc(url, cfunc) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            cfunc(this);
+                        }
+                    };
+                    xhttp.open("GET", url, true);
+                    xhttp.send();
+                }
+                loadDoc("Books.xml", function(xhttp) {
+                    var xmlDoc = xhttp.responseXML;
+                    var x = xmlDoc.getElementsByTagName("book");
+                    document.getElementById("1").innerHTML =
+                        x[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                });
+            </script>
+
 </html>

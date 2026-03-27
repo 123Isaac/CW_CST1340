@@ -77,17 +77,16 @@
                         </tr>
                     </table>
                 </div>
-    <div class="about-box">
-    <h2>About Us</h2>
-    <p>
-      Welcome to the Library of Ruina, where every book holds a story waiting to be uncovered. We are more than just a bookstore—we are a gateway to worlds unknown, filled with knowledge, mystery, and imagination.
-
-Our collection is carefully chosen to bring together powerful stories, hidden truths, and unforgettable journeys. Step inside, and let the pages guide you to places you’ve never been before.
-    </p>
-           <p style="text-align: center;">
-             Learn more about us <a href="index.html">here</a>.
-           </p>
-  </div>
+                <div class="about-box">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to the Library of Ruina, where every book holds a story waiting to be uncovered. We are more than just a bookstore—we are a gateway to worlds unknown, filled with knowledge, mystery, and imagination. Our collection is carefully chosen to bring
+                        together powerful stories, hidden truths, and unforgettable journeys. Step inside, and let the pages guide you to places you’ve never been before.
+                    </p>
+                    <p style="text-align: center;">
+                        Learn more about us <a href="index.html">here</a>.
+                    </p>
+                </div>
             </div>
         </main>
         <footer>
@@ -127,5 +126,17 @@ Our collection is carefully chosen to bring together powerful stories, hidden tr
             </section>
         </footer>
     </body>
+    <script>
+        function loadDoc(url, cfunc) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    cfunc(this);
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
 
     </html>

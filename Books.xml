@@ -17,6 +17,7 @@
         <year>1986</year>
         <genre ref="c1"/>
         <price>20.9</price>
+        <numberOfSales>1250</numberOfSales>
         <summary>A group of children in Derry, Maine confronts a terrifying shape-shifting entity that returns every 27 years.</summary>
         <image>images/fiction/It.jpeg</image>
     </book>
@@ -27,6 +28,7 @@
         <year>2022</year>
         <genre ref="c1"/>
         <price>16.5</price>
+        <numberOfSales>890</numberOfSales>
         <summary>A woman takes a job as a housemaid for a wealthy family, only to uncover dark secrets hidden within the house.</summary>
         <image>images/fiction/The_Housemaid.jpeg</image>
     </book>
@@ -37,6 +39,7 @@
         <year>2022</year>
         <genre ref="c1"/>
         <price>17.0</price>
+        <numberOfSales>765</numberOfSales>
         <summary>A nurse working in a prison discovers that one of the inmates is someone from her past, leading to shocking revelations.</summary>
         <image>images/fiction/The_Inmate.jpeg</image>
     </book>
@@ -47,6 +50,7 @@
         <year>2015</year>
         <genre ref="c1"/>
         <price>18.0</price>
+        <numberOfSales>1120</numberOfSales>
         <summary>In a divided world where blood determines status, a common girl discovers she has powers reserved for the elite.</summary>
         <image>images/fiction/Red_Queen.jpeg</image>
     </book>
@@ -57,6 +61,7 @@
         <year>1960</year>
         <genre ref="c1"/>
         <price>18.5</price>
+        <numberOfSales>3450</numberOfSales>
         <summary>A young girl in the American South witnesses her father defend a Black man falsely accused of a crime, exposing deep racial injustice.</summary>
         <image>images/fiction/TKAMB.png</image>
     </book>
@@ -67,6 +72,7 @@
             <year>2018</year>
             <genre ref="c2"/>
             <price>19.99</price>
+            <numberOfSales>945</numberOfSales>
             <summary>A young girl embarks on a journey to restore magic in a land where it has been lost.</summary>
             <image>images/fantasy/Children of Blood_and_Bone.jpeg</image>
     </book>
@@ -77,6 +83,7 @@
         <year>1997</year>
         <genre ref="c2"/>
         <price>19.9</price>
+        <numberOfSales>5200</numberOfSales>
         <summary>A young wizard discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry.</summary>
         <image>images/fantasy/Harry_potter.jpeg</image>
     </book>
@@ -87,6 +94,7 @@
         <year>2020</year>
         <genre ref="c2"/>
         <price>17.5</price>
+        <numberOfSales>634</numberOfSales>
         <summary>A high-stakes adventure in a world torn apart by elemental storms.</summary>
         <image>images/fantasy/Hurricane_wars.jpeg</image>
     </book>
@@ -97,6 +105,7 @@
         <year>2005</year>
         <genre ref="c2"/>
         <price>18.0</price>
+        <numberOfSales>2890</numberOfSales>
         <summary>A boy discovers he is the son of Poseidon and must stop a war among the gods.</summary>
         <image>images/fantasy/Percy_Jackson.jpeg</image>
     </book>
@@ -107,6 +116,7 @@
         <year>2021</year>
         <genre ref="c2"/>
         <price>16.5</price>
+        <numberOfSales>512</numberOfSales>
         <summary>A magical academy for troubled girls hides secrets darker than its enchanted walls.</summary>
         <image>images/fantasy/DragoMirror.jpeg</image>
     </book>

@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -11,54 +12,118 @@ body {
     animation: BackDrop 60s ease-in-out infinite;
 }
 
-.carousel{
+.carousel {
     display: flex;
     background: red;
     height: 260px;
-    overflow-x: auto; /*makes carousel scrollable*/
-    
+    overflow-x: auto;
+    /*makes carousel scrollable*/
 }
-.about_animation{
+
+.about_animation {
     display: flex;
     flex-direction: column;
 }
-.about{
+
+.about {
     background-color: antiquewhite;
     color: pink;
     border-radius: 15px;
 }
-.carousel::-webkit-scrollbar{
-    display: none; /*hide scrollbar*/
 
+.carousel::-webkit-scrollbar {
+    display: none;
+    /*hide scrollbar*/
 }
-.infinite_scroll{
+
+.infinite_scroll {
     display: flex;
     justify-content: center;
-    gap:1em;
-    animation: move 10s infinite linear;
+    gap: 1em;
+    animation: move 20s infinite linear;
+    animation-play-state: running;
     padding-right: 1em;
 }
-.card{
+
+.infinite_scroll:hover,
+.infinite_scroll:focus-within {
+    animation-play-state: paused;
+}
+
+.card {
     flex: 0 0 auto;
+    position: relative;
     border-radius: 15px;
-    overflow: hidden;/*ensure images take card shape*/
+    overflow: visible;
+    /* allow tooltip to escape card */
+    /*ensure images take card shape*/
     color: aliceblue;
     height: 250px;
     width: 160px;
     background-color: bisque;
 }
+
 .card img {
-    width: 100%; /* fill the card */
-    height: 100%; /* maintain card shape */
-    object-fit: cover; /* crop nicely without stretching */
+    border-radius: 15px;
+    /* preserve rounded corners when overflow is visible */
+    width: 100%;
+    /* fill the card */
+    height: 100%;
+    /* maintain card shape */
+    object-fit: cover;
+    /* crop nicely without stretching */
 }
 
-@keyframes move{
-    from{translate: 0;}
-    to{translate: -100%;}
-} /* Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
+.card img:hover {
+    transform: scale(1.05);
+    /* slight zoom on hover */
+    transition: transform 0.3s ease;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 9999;
+    top: 8px;
+    left: 180%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    white-space: normal;
+}
+
+.card:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover .infinite_scroll {
+    animation-play-state: paused;
+    /* pause carousel movement on hover */
+}
+
+@keyframes move {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
+}
+
+
+/* Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
+
 main {
-  flex: 1; /* push footer down */
+    flex: 1;
+    /* push footer down */
 }
 
 @keyframes BackDrop {
@@ -81,10 +146,11 @@ div.info-bracket {
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
 .fix-float::after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 ul {
@@ -111,56 +177,88 @@ ul li a:hover {
     background-color: #111111;
 }
 
-.socials{
-    display:flex;
+
+/* Table styles for genre list */
+
+#GenreList {
+    border-collapse: collapse;
+    width: 300px;
+    margin: 10px 0;
+}
+
+#GenreList th,
+#GenreList td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#GenreList th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#GenreList tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#GenreList tr:hover {
+    background-color: #e0e0e0;
+}
+
+.socials {
+    display: flex;
     justify-content: center;
     height: 100%;
-    width:100%;
-    
+    width: 100%;
 }
-.wrapper1{
+
+.wrapper1 {
     margin-left: 2cm;
 }
-.wrapper1 .button{
+
+.wrapper1 .button {
     display: inline-block;
-    height:60px;
-    width:60px;
+    height: 60px;
+    width: 60px;
     margin: 0 5px;
     overflow: hidden;
     background-color: rgb(5, 75, 167);
     border-radius: 50px;
     cursor: pointer;
-    box-shadow:0px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: ease;
 }
 
-.wrapper1 .button:hover{
+.wrapper1 .button:hover {
     width: 200px;
 }
-.wrapper1 .button .icon{
-    display:inline-block;
-    height:60px;
+
+.wrapper1 .button .icon {
+    display: inline-block;
+    height: 60px;
     width: 60px;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
-    line-height:60px;
+    line-height: 60px;
 }
 
-.wrapper1 .button .icon i{
+.wrapper1 .button .icon i {
     font-size: 30px;
     line-height: 60px;
-
 }
-.wrapper1 .button span{
+
+.wrapper1 .button span {
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
     margin-left: 10px;
 }
-.footer-section{
+
+.footer-section {
     background-color: black;
-    padding: 40px ;
+    padding: 40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     color: white;

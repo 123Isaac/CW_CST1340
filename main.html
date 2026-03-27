@@ -23,25 +23,29 @@
                 <!--I removed floats because  my footer though page was empty-->
                 <div class="info-bracket" style="float: left; padding: 10px; text-align: center; margin: 0px 0 0 50px;">
                     <h3>Top Genres</h3>
-                    <!--Add code later in project to display Highest bought Book Here-->
                     <table id="GenreList">
                     </table>
                 </div>
 
                 </table>
-            </div>
+                <div class="info-bracket" style="float: right; padding: 10px; text-align: center; margin: 0px 50px 0 0;">
+                    <h3>Top Selling Books</h3>
+                    <table id="BookList">
+                    </table>
+                </div>
 
 
-            <div class="about-box">
-                <h2>About Us</h2>
-                <p>
-                    Welcome to the Library of Ruina, where every book holds a story waiting to be uncovered. We are more than just a bookstore—we are a gateway to worlds unknown, filled with knowledge, mystery, and imagination. Our collection is carefully chosen to bring
-                    together powerful stories, hidden truths, and unforgettable journeys. Step inside, and let the pages guide you to places you’ve never been before.
-                </p>
-                <p style="text-align: center;">
-                    Learn more about us <a href="index.html">here</a>.
-                </p>
-            </div>
+
+                <div class="about-box">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to the Library of Ruina, where every book holds a story waiting to be uncovered. We are more than just a bookstore—we are a gateway to worlds unknown, filled with knowledge, mystery, and imagination. Our collection is carefully chosen to bring
+                        together powerful stories, hidden truths, and unforgettable journeys. Step inside, and let the pages guide you to places you’ve never been before.
+                    </p>
+                    <p style="text-align: center;">
+                        Learn more about us <a href="index.html">here</a>.
+                    </p>
+                </div>
             </div>
 
             <div class="carousel">
@@ -96,6 +100,7 @@
         loadDoc("Books.xml", function(xml) {
             TopSellingGenre(xml);
             loadBookCarousel(xml);
+            loadTopSellingBooks(xml);
         });
 
         function loadDoc(url, cfunc) {
@@ -177,6 +182,36 @@
             carouselHtml += carouselHtml;
 
             document.getElementById("bookCarousel").innerHTML = carouselHtml;
+        }
+
+        function loadTopSellingBooks(xml) {
+            var xmlDoc = xml.responseXML;
+            var books = xmlDoc.getElementsByTagName("book");
+            var bookSales = [];
+
+            // Aggregate sales for each book
+            for (var i = 0; i < books.length; i++) {
+                var book = books[i];
+                var title = book.getElementsByTagName("title")[0].textContent;
+                var sales = parseInt(book.getElementsByTagName("numberOfSales")[0].textContent);
+                bookSales.push({
+                    title: title,
+                    sales: sales
+                });
+            }
+
+            // Sort by sales
+            bookSales.sort(function(a, b) {
+                return b.sales - a.sales;
+            });
+
+            // Create table HTML
+            var table = "<tr><th>Book Title</th><th>Books Sold</th></tr>";
+            for (var i = 0; i < 10; i++) {
+                table += "<tr><td>" + bookSales[i].title + "</td><td>" + bookSales[i].sales + "</td></tr>";
+            }
+
+            document.getElementById("BookList").innerHTML = table;
         }
     </script>
 

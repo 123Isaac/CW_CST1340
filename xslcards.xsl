@@ -9,17 +9,30 @@
                 <link rel="stylesheet" href="xsl.css"/>
             </head>
             <body>
+                <div class="navclass">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="main.html">Home</a></li>
+                            <li><a href="books.xml">Books</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
                 <h1>Books</h1>
-                <label for="categoryFilter">Select category:</label>
-                <select id="categoryFilter" style="margin: 0 0 20px 10px;">
-                    <option value="">All categories</option>
-                    <xsl:for-each select="/bookstore/categories/category">
-                        <option value="{@id}"><xsl:value-of select="."/></option>
-                    </xsl:for-each>
-                </select>
+                <div class="category">
+                    <label for="categoryFilter">Select category:</label>
+                    <select id="categoryFilter" style="margin: 0 0 20px 10px;">
+                        <option value="">All categories</option>
+                        <xsl:for-each select="/bookstore/categories/category">
+                            <option value="{@id}"><xsl:value-of select="."/></option>
+                        </xsl:for-each>
+                    </select>
+                </div>
+
                 <div class="book_container" id="bookContainer">
                 <xsl:for-each select="bookstore/book">
-                <div class="card" data-genre="{genre/@ref}">
+                <div class="book_card" data-genre="{genre/@ref}">
                     <div class="pic"><img src="{image}" alt="{title}" /></div> 
                     <h2><xsl:value-of select="title"/></h2>
                     <p>Author: <xsl:value-of select="author"/></p>
@@ -32,7 +45,7 @@
             <script>
                 document.getElementById('categoryFilter').addEventListener('change', function() {
                     var selected = this.value;
-                    var cards = document.querySelectorAll('.book_container .card');
+                    var cards = document.querySelectorAll('.book_container .book_card');
                     cards.forEach(function(card) {
                         if (!selected || card.getAttribute('data-genre') === selected) {
                             card.style.display = 'block';

@@ -24,16 +24,28 @@ body {
     /*makes carousel scrollable*/
 }
 
-.about_animation {
+.top-info {
     display: flex;
-    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: wrap;               /* stack on smaller screens */
+    gap: 30px;                     /* space between boxes */
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
-.about {
-    background-color: antiquewhite;
-    color: pink;
+.info-bracket {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px double rgb(255, 255, 255);
     border-radius: 15px;
 }
+
 
 .carousel::-webkit-scrollbar {
     display: none;
@@ -163,7 +175,7 @@ div.info-bracket {
     list-style-type: none;
     border-radius: 40px;
     width: 500px;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     overflow: hidden;
     background-color: rgb(16, 16, 16);
@@ -192,7 +204,7 @@ div.info-bracket {
 }
 
 .navbar ul li a:hover {
-    background-color: #928a8a;
+    background-color: #38b174;
     transform: translateY(-5px);
 }
 .socials {

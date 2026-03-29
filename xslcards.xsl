@@ -14,7 +14,7 @@
                         <ul>
                             <li><a href="main.html">Home</a></li>
                             <li><a href="books.xml">Books</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="index.html">About Us</a></li>
                         </ul>
                     </nav>
                 </div>

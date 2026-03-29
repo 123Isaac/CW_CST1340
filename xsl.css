@@ -55,7 +55,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #928a8a;
+    background-color: #38b174;
     transform: translateY(-5px);
 }
 .book_container {

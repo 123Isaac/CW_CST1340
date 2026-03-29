@@ -117,8 +117,8 @@ body {
   display: inline-block;
   padding: 20px;
   border-radius: 15px;
-  background: #681459;
-  box-shadow: 0 0 15px rgba(91, 23, 122, 0.3);
+  background: #09b6f0;
+  box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
 }
 
 /* Table */
@@ -133,20 +133,20 @@ th, td {
 }
 
 th {
-  background: #5b177a;
-  color: rgb(141, 18, 163);
+  background: #06f4f0;
+  color: rgb(141, 186, 222);
 }
 
 td {
-  background: #b6329e;
+  background: #4832b6;
 }
 
 tr:nth-child(even) td {
-  background: #efe0ff;
+  background: #0e7d9c;
 }
 
 tr:hover td {
-  background: #d4b3ff;
+  background: #a9addd;
   color: black;
   transition: 0.3s;
 }

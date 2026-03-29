@@ -16,6 +16,55 @@ body {
     animation: BackDrop 60s ease-in-out infinite;*/
 }
 
+.mid-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* Vertically aligns the animation with text/content */
+    gap: 50px;              /* Adjust this number for more or less space */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mid-section > div {                        
+    max-height: 250px;               
+}
+
+.animation{
+    display: flex;
+    flex-direction: column;
+}
+.about-box {
+    display: flex;
+    flex-direction: column;
+  border: 2px solid #444;
+  padding: 25px;
+  max-width: 600px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #69299a, #530e2b);
+  box-shadow: 0 6px 25px rgba(133, 31, 86, 0.8);
+  color: #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.about-box h2 {
+  text-align: center;
+  color: #f5429e;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 6px #5b177a;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  line-height: 1.8;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9);
+}
+
 .carousel {
     display: flex;
     background: rgb(16, 36, 52);

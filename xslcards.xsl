@@ -7,6 +7,8 @@
             <head>
                 <title>Books</title>
                 <link rel="stylesheet" href="xsl.css"/>
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
             </head>
             <body>
                 <div class="navclass">
@@ -42,7 +44,67 @@
                 </div>
             </xsl:for-each>
             </div>
+
+             <footer>
+            <div class="footer-heading"><h2>Contact Us</h2>
+                </div>
+            
+            <div class="footer-section">
+                
+               
+                <div class="location">
+                        <p>Library of Ruina
+                            <br />12 Coral Palm Avenue
+                            <br />Caudan Waterfront District
+                            <br />Port Louis 11328
+                            <br />Mauritius
+                        </p>
+
+                        <p>info@libraryofruina.example
+                            <br />+230 5 000 1234
+                        </p>
+                </div>
+
+                <div class="socials">
+                    <div class="wrapper1">
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fa fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+                            <span>Whatsapp</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="direct_contact">
+                        <h3>Message us directly</h3>
+                        <textarea name="" id="">Message us here directly</textarea>
+                        <button>Send</button>
+                    </div>
+                    
+            </div>
+            <div class="footer-bottom">
+                    <p>&#169; 2026 Library of Ruina. All Rights Reserved. Built with <span>&#10084;</span> in Mauritius.</p>
+            </div>
+
+        </footer>
+        
             <script>
+            // <![CDATA[
                 document.getElementById('categoryFilter').addEventListener('change', function() {
                     var selected = this.value;
                     var cards = document.querySelectorAll('.book_container .book_card');
@@ -54,6 +116,7 @@
                         }
                     });
                 });
+                // ]]>
             </script>
             </body>
         </html>

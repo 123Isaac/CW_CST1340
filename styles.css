@@ -11,6 +11,7 @@ body {
     
 }
 
+
 .bg-pic {
     height: 500px;
     background-image: url('library.jpg');
@@ -20,6 +21,24 @@ body {
     position: relative;
 }
 
+.logo-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers all children horizontally */
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 250px;       /* bigger size */
+    width: auto;         /* width adjusts to keep aspect ratio */
+}
+
+.logo img {
+    height: 100%;        /* fill container height */
+    width: auto;         /* maintain aspect ratio */
+    object-fit: contain; /* ensures image isn’t stretched */
+    filter: brightness(1.5) contrast(1.2); /* optional: makes it whiter/brighter */
+}
 .bg-pic::after {
     content: "";
     position: absolute;
@@ -314,143 +333,3 @@ div.info-bracket {
     background-color: #e0e0e0;
 }
 
-.socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    height: 100%;
-    width: 100%;
-    gap: 20px;       
-}
-
-.wrapper1 {
-    display: flex;
-    flex-direction: column; /* This stacks the children vertically */
-    align-items: center;
-    gap: 10px;
-    text-align: center;    /* center the inline-blocks */
-}
-
-.wrapper1 .button {
-    display: flex;          /* Changed from inline-block */
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    margin-bottom: 0;
-    overflow: hidden;
-    background-color: #ff7a5c;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s ease;
-}
-
-.wrapper1 .button:hover {
-    width: 200px;
-}
-.wrapper1 .button:hover span {
-    padding-right: 20px;
-    opacity: 1;           /* make the text visible */
-}
-
-.wrapper1 .button .icon {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    padding-left: 20px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-}
-
-.wrapper1 .button .icon i {
-    font-size: 30px;
-    line-height: 60px;
-}
-
-.wrapper1 .button span {
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: 10px;
-    white-space: nowrap;
-    opacity: 0;                /* hide initially */
-    transition: opacity 0.4s ease;
-}
-
-footer {
-    background-color: #0b757b;
-    padding: 40px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    color: white;
-}
-
-.footer-heading {
-    text-align: center; 
-    margin-bottom: 12px;
-}
-
-.footer-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 25px;
-}
-
-.footer-section > div {
-    flex: 1;                         /* each column takes equal space */
-    max-width: 350px;                /* prevent columns from being too wide */
-}
-
-/* Address block */
-.location {
-    display: flex;
-    flex-direction: column;
-    max-width: 250px;
-    line-height: 1.6;
-   
-}
-
-
-/* Message box area */
-.direct_contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 250px;
-   
-}
-
-.direct_contact textarea {
-    resize: none;
-    height: 80px;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-}
-
-.direct_contact button {
-    background-color: #ff7a5c;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-}
-
-.direct_contact button:hover {
-    background-color: #8e4e40;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle line above */
-    margin-top: 30px;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #a8caba; /* Using a softer color from your palette */
-    letter-spacing: 1px;
-}

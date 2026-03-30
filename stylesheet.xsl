@@ -21,6 +21,12 @@
                             <td>
                             <xsl:value-of select="/bookstore/categories/category[@id=current()/genre/@ref]"/>
                             </td>
+                            <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></input>
+                            </div>
+                            <td>
+                            
+                            </td>
                         </tr>
                     </xsl:for-each>
                 </table>

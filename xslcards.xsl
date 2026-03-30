@@ -15,26 +15,54 @@
                     <nav class="navbar">
                         <ul>
                             <li><a href="main.html">Home</a></li>
-                            <li><a href="books.xml">Books</a></li>
+                            <li><a href="Books.xml">Books</a></li>
                             <li><a href="index.html">About Us</a></li>
                         </ul>
                     </nav>
                 </div>
                 
                 <h1>Books</h1>
-                <div class="category">
-                    <label for="categoryFilter">Select category:</label>
-                    <select id="categoryFilter" style="margin: 0 0 20px 10px;">
-                        <option value="">All categories</option>
-                        <xsl:for-each select="/bookstore/categories/category">
-                            <option value="{@id}"><xsl:value-of select="."/></option>
-                        </xsl:for-each>
-                    </select>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="search-container">
+                                <input type="text" id="searchInput" placeholder="Search by title..." style="padding: 5px; width: 200px; margin-bottom: 20px;"></input>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="category">
+                                <label for="categoryFilter">Select category:</label>
+                                <select id="categoryFilter" style="margin: 0 0 20px 10px;">
+                                    <option value="">All categories</option>
+                                    <xsl:for-each select="/bookstore/categories/category">
+                                        <option value="{@id}"><xsl:value-of select="."/></option>
+                                    </xsl:for-each>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="category">
+                                <label for="Author">Select Author:</label>
+                                <select id="AuthorFilter" style="margin: 0 0 20px 10px;">
+                                    <option value="">Any</option>
+                                    <xsl:for-each select="/bookstore/books/book/author[not(.=preceding::book/author)]">
+                                        <option value='{.}'><xsl:value-of select="."/></option>
+                                    </xsl:for-each>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="price-filter" style="margin-bottom: 20px;">
+                                <label for="priceRange">Max price: $<span id="priceValue">35.00</span></label>
+                                <input type="range" min="10" max="35" value="35" step="0.5" id="priceRange" style="width: 250px; margin-left: 10px;" class="price-slider"/>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
                 <div class="book_container" id="bookContainer">
-                <xsl:for-each select="bookstore/book">
-                <div class="book_card" data-genre="{genre/@ref}">
+                <xsl:for-each select="bookstore/books/book">
+                <div class="book_card" data-genre="{genre/@ref}" data-price="{price}" data-author="{author}">
                     <div class="pic"><img src="{image}" alt="{title}" /></div> 
                     <h2><xsl:value-of select="title"/></h2>
                     <p>Author: <xsl:value-of select="author"/></p>
@@ -105,17 +133,45 @@
         
             <script>
             // <![CDATA[
-                document.getElementById('categoryFilter').addEventListener('change', function() {
-                    var selected = this.value;
-                    var cards = document.querySelectorAll('.book_container .book_card');
-                    cards.forEach(function(card) {
-                        if (!selected || card.getAttribute('data-genre') === selected) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
+                const searchInput = document.getElementById('searchInput');
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase();
+                    document.querySelectorAll('.book_container .book_card').forEach(function(card) {
+                        const title = card.querySelector('h2').textContent.toLowerCase();
+                        card.style.display = title.includes(query) ? 'block' : 'none';
                     });
                 });
+                const categoryFilter = document.getElementById('categoryFilter');
+                const authorFilter = document.getElementById('AuthorFilter');
+                const priceRange = document.getElementById('priceRange');
+                const priceValue = document.getElementById('priceValue');
+
+                function filterBooks() {
+                    const selectedCategory = categoryFilter.value;
+                    const selectedAuthor = authorFilter.value;
+                    const maxPrice = parseFloat(priceRange.value);
+                    priceValue.textContent = maxPrice.toFixed(2);
+
+                    document.querySelectorAll('.book_container .book_card').forEach(function(card) {
+                        const cardGenre = card.getAttribute('data-genre');
+                        const cardPrice = parseFloat(card.getAttribute('data-price'));
+                        const cardAuthor = card.getAttribute('data-author');
+
+                        const genreMatch = !selectedCategory || cardGenre === selectedCategory;
+                        const priceMatch = !isNaN(cardPrice) && cardPrice <= maxPrice;
+                        const authorMatch = !selectedAuthor || cardAuthor === selectedAuthor;
+
+                        card.style.display = (genreMatch && priceMatch && authorMatch) ? 'block' : 'none';
+                    });
+                }
+
+                categoryFilter.addEventListener('change', filterBooks);
+                authorFilter.addEventListener('change', filterBooks);
+                priceRange.addEventListener('input', filterBooks);
+
+                // initialize on load
+                filterBooks();
+
                 // ]]>
             </script>
             </body>

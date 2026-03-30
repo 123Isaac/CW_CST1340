@@ -15,7 +15,7 @@
                     <nav class="navbar">
                         <ul>
                             <li><a href="main.html">Home</a></li>
-                            <li><a href="books.xml">Books</a></li>
+                            <li><a href="Books.xml">Books</a></li>
                             <li><a href="index.html">About Us</a></li>
                         </ul>
                     </nav>
@@ -40,7 +40,7 @@
                                 <label for="Author">Select Author:</label>
                                 <select id="AuthorFilter" style="margin: 0 0 20px 10px;">
                                     <option value="">Any</option>
-                                    <xsl:for-each select="/bookstore/book/author[not(.=preceding::book/author)]">
+                                    <xsl:for-each select="/bookstore/books/book/author[not(.=preceding::book/author)]">
                                         <option value='{.}'><xsl:value-of select="."/></option>
                                     </xsl:for-each>
                                 </select>
@@ -56,7 +56,7 @@
                 </table>
 
                 <div class="book_container" id="bookContainer">
-                <xsl:for-each select="bookstore/book">
+                <xsl:for-each select="bookstore/books/book">
                 <div class="book_card" data-genre="{genre/@ref}" data-price="{price}" data-author="{author}">
                     <div class="pic"><img src="{image}" alt="{title}" /></div> 
                     <h2><xsl:value-of select="title"/></h2>

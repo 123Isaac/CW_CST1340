@@ -52,8 +52,8 @@ body {
   max-width: 600px;
   margin: 40px auto;
   border-radius: 15px;
-  background: linear-gradient(145deg, #69299a, #530e2b);
-  box-shadow: 0 6px 25px rgba(133, 31, 86, 0.8);
+  background: linear-gradient(145deg, #adc8e3, #02393e);
+  
   color: #eee;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -61,15 +61,15 @@ body {
 
 .about-box h2 {
   text-align: center;
-  color: #f5429e;
+  color: #08ceec;
   font-family: 'Georgia', serif;
-  text-shadow: 0 0 6px #5b177a;
+  text-shadow: 0 0 6px #98cee2;
   margin-bottom: 15px;
 }
 
 .about-box p {
   line-height: 1.8;
-  color: #ddd;
+  color: #e5f1f3;
   font-family: 'Arial', sans-serif;
 }
 
@@ -78,3 +78,16 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9);
 }
 
+.info-bracket{
+  text-align: center;
+  margin-top: 30px;
+  color: #0ad4f8;
+    text-shadow: 0 0 6px #98cee2;
+    
+
+}
+.info-bracket :hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9);
+
+}

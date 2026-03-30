@@ -1,0 +1,16 @@
+<!ELEMENT bookstore (categories, books)>
+<!ELEMENT categories (category*)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category id ID #REQUIRED>
+<!ELEMENT books (book*)>
+<!ELEMENT book (title, author, year, genre, price, numberOfSales, summary, image)>
+<!ATTLIST book id ID #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT genre EMPTY>
+<!ATTLIST genre ref IDREF #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT numberOfSales (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT image (#PCDATA)>

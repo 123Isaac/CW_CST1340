@@ -135,13 +135,6 @@
             <script>
             // <![CDATA[
                 const searchInput = document.getElementById('searchInput');
-                searchInput.addEventListener('input', function() {
-                    const query = this.value.toLowerCase();
-                    document.querySelectorAll('.book_container .book_card').forEach(function(card) {
-                        const title = card.querySelector('h2').textContent.toLowerCase();
-                        card.style.display = title.includes(query) ? 'block' : 'none';
-                    });
-                });
                 const categoryFilter = document.getElementById('categoryFilter');
                 const authorFilter = document.getElementById('AuthorFilter');
                 const priceRange = document.getElementById('priceRange');
@@ -157,18 +150,22 @@
                         const cardGenre = card.getAttribute('data-genre');
                         const cardPrice = parseFloat(card.getAttribute('data-price'));
                         const cardAuthor = card.getAttribute('data-author');
+                        const title = card.querySelector('h2').textContent.toLowerCase();
+                        const searchTerm = searchInput.value.toLowerCase();
 
+                        const matchesSearch = title.includes(searchTerm);
                         const genreMatch = !selectedCategory || cardGenre === selectedCategory;
                         const priceMatch = !isNaN(cardPrice) && cardPrice <= maxPrice;
                         const authorMatch = !selectedAuthor || cardAuthor === selectedAuthor;
 
-                        card.style.display = (genreMatch && priceMatch && authorMatch) ? 'block' : 'none';
+                        card.style.display = (genreMatch && priceMatch && authorMatch && matchesSearch) ? 'block' : 'none';
                     });
                 }
 
                 categoryFilter.addEventListener('change', filterBooks);
                 authorFilter.addEventListener('change', filterBooks);
                 priceRange.addEventListener('input', filterBooks);
+                searchInput.addEventListener('input', filterBooks);
 
                 // initialize on load
                 filterBooks();

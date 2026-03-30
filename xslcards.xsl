@@ -25,6 +25,11 @@
                 <table>
                     <tr>
                         <td>
+                            <div class="search-container">
+                                <input type="text" id="searchInput" placeholder="Search by title..." style="padding: 5px; width: 200px; margin-bottom: 20px;"></input>
+                            </div>
+                        </td>
+                        <td>
                             <div class="category">
                                 <label for="categoryFilter">Select category:</label>
                                 <select id="categoryFilter" style="margin: 0 0 20px 10px;">
@@ -128,6 +133,14 @@
         
             <script>
             // <![CDATA[
+                const searchInput = document.getElementById('searchInput');
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase();
+                    document.querySelectorAll('.book_container .book_card').forEach(function(card) {
+                        const title = card.querySelector('h2').textContent.toLowerCase();
+                        card.style.display = title.includes(query) ? 'block' : 'none';
+                    });
+                });
                 const categoryFilter = document.getElementById('categoryFilter');
                 const authorFilter = document.getElementById('AuthorFilter');
                 const priceRange = document.getElementById('priceRange');

@@ -49,7 +49,7 @@
                         <td>
                             <div class="price-filter" style="margin-bottom: 20px;">
                                 <label for="priceRange">Max price: $<span id="priceValue">35.00</span></label>
-                                <input type="range" min="10" max="35" value="35" step="0.5" id="priceRange" style="width: 250px; margin-left: 10px;" />
+                                <input type="range" min="10" max="35" value="35" step="0.5" id="priceRange" style="width: 250px; margin-left: 10px;" class="price-slider"/>
                             </div>
                         </td>
                     </tr>

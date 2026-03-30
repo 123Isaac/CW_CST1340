@@ -3,6 +3,11 @@ Joan Martha Acom- M01081319
 Isaac Mujuni Bagenda- MO1O69186
 Grace Benita Nalubwama- M01083273
 
+## HELP NEEDED
+
+    I cant add a order to slider container in the books page
+
+
 ## Joan
     I imported my social media icons from https://cdnjs.com/libraries/font-awesome
 

@@ -26,18 +26,20 @@ body {
     flex-direction: column;
     align-items: center; /* centers all children horizontally */
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .logo {
-    height: 250px;       /* bigger size */
-    width: auto;         /* width adjusts to keep aspect ratio */
+    height: 250px;
+    width: 300px;
 }
 
 .logo img {
     height: 100%;        /* fill container height */
     width: auto;         /* maintain aspect ratio */
     object-fit: contain; /* ensures image isn’t stretched */
-    filter: brightness(1.5) contrast(1.2); /* optional: makes it whiter/brighter */
+    filter:brightness(150%);
+    /*filter: brightness(1.5) contrast(1.2); /* optional: makes it whiter/brighter */
 }
 .bg-pic::after {
     content: "";
@@ -68,6 +70,98 @@ body {
 .animation{
     display: flex;
     flex-direction: column;
+}
+
+.mid-section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(180deg, #073B4C 0%, #052c39 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+.kpi-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 20px;
+  }
+
+  .kpi {
+    background-color: #1B2A49; /* deep teal/navy */
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+
+  .kpi-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .kpi-number {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .kpi-label {
+    font-size: 14px;
+    color: #d1d1d1;
+
+}
+
+/* Table Box */
+.table-box {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
+}
+
+/* Table */
+.table-box table {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+.table-box td {
+  padding: 12px;
+  text-align: center;
+}
+
+.table-box th {
+  background: #06f4f0;
+  color: rgb(141, 186, 222);
+}
+
+.table-box td {
+  background: #4832b6;
+}
+
+.table-box :nth-child(even) td {
+  background: #0e7d9c;
+}
+
+.table-box tr:hover td {
+  background: #a9addd;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Note */
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
 }
 
 .about-box {
@@ -281,6 +375,9 @@ div.info-bracket {
     padding-top: 20px;
 
 }
+.navbar ul {
+    list-style: none;
+}
 .navbar ul li {
     float: left;
     padding-right: 5px;
@@ -332,4 +429,3 @@ div.info-bracket {
 #GenreList tr:hover {
     background-color: #e0e0e0;
 }
-

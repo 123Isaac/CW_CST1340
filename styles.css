@@ -8,9 +8,7 @@ body {
 
 body {
     background-color: #a5e6e2;
-    
 }
-
 
 .bg-pic {
     height: 500px;
@@ -19,12 +17,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
 }
 
 .logo-nav {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers all children horizontally */
+    align-items: center;
+    /* centers all children horizontally */
     margin-bottom: 30px;
     width: 100%;
 }
@@ -35,18 +35,24 @@ body {
 }
 
 .logo img {
-    height: 100%;        /* fill container height */
-    width: auto;         /* maintain aspect ratio */
-    object-fit: contain; /* ensures image isn’t stretched */
-    filter:brightness(150%);
+    height: 100%;
+    /* fill container height */
+    width: auto;
+    /* maintain aspect ratio */
+    object-fit: contain;
+    /* ensures image isn’t stretched */
+    filter: brightness(150%);
     /*filter: brightness(1.5) contrast(1.2); /* optional: makes it whiter/brighter */
 }
+
 .bg-pic::after {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .bg-pic .navclass {
@@ -55,113 +61,120 @@ body {
     padding: 20px;
 }
 
-.mid-section{
+.mid-section {
     display: flex;
     justify-content: center;
-    align-items: center;     /* Vertically aligns the animation with text/content */
-    gap: 50px;              /* Adjust this number for more or less space */
+    align-items: center;
+    /* Vertically aligns the animation with text/content */
+    gap: 50px;
+    /* Adjust this number for more or less space */
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.mid-section > div {                        
-    max-height: 300px;               
+
+.mid-section>div {
+    max-height: 300px;
 }
 
-.animation{
+.animation {
     display: flex;
     flex-direction: column;
 }
 
-.mid-section2{
+.mid-section2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Arial', sans-serif;
-    background:linear-gradient(180deg, #073B4C 0%, #052c39 100%);
+    background: linear-gradient(180deg, #073B4C 0%, #052c39 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
 }
 
-
 .kpi-container {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-gap: 20px;
-  }
+}
 
-  .kpi {
-    background-color: #1B2A49; /* deep teal/navy */
+.kpi {
+    background-color: #1B2A49;
+    /* deep teal/navy */
     color: #fff;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-
-  .kpi-icon {
+.kpi-icon {
     font-size: 30px;
     margin-bottom: 10px;
     display: block;
-  }
+}
 
-  .kpi-number {
+.kpi-number {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 5px;
-  }
+}
 
-  .kpi-label {
+.kpi-label {
     font-size: 14px;
     color: #d1d1d1;
-
 }
+
 
 /* Table Box */
+
 .table-box {
-  display: inline-block;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
 }
 
+
 /* Table */
+
 .table-box table {
-  border-collapse: collapse;
-  width: 400px;
+    border-collapse: collapse;
+    width: 400px;
 }
 
 .table-box td {
-  padding: 12px;
-  text-align: center;
+    padding: 12px;
+    text-align: center;
 }
 
 .table-box th {
-  background: #06f4f0;
-  color: rgb(141, 186, 222);
+    background: #06f4f0;
+    color: rgb(141, 186, 222);
 }
 
 .table-box td {
-  background: #4832b6;
+    background: #4832b6;
 }
 
 .table-box :nth-child(even) td {
-  background: #0e7d9c;
+    background: #0e7d9c;
 }
 
 .table-box tr:hover td {
-  background: #a9addd;
-  color: black;
-  transition: 0.3s;
+    background: #a9addd;
+    color: black;
+    transition: 0.3s;
 }
 
+
 /* Note */
+
 .note {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #666;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
 }
 
 .about-box {
@@ -170,10 +183,11 @@ body {
     /* Deep Teal Gradient */
     background: linear-gradient(180deg, #073B4C 0%, #052c39 100%);
     /* Thin, crisp gold border */
-    border: 1.5px solid #D4AF37; 
+    border: 1.5px solid #D4AF37;
     padding: 40px;
     max-width: 600px;
-    border-radius: 12px; /* Modern subtle roundness */
+    border-radius: 12px;
+    /* Modern subtle roundness */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     color: #f1f1f1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -181,18 +195,20 @@ body {
 
 .about-box h2 {
     text-align: center;
-    color: #D4AF37; /* Gold heading */
+    color: #D4AF37;
+    /* Gold heading */
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
     /* Remove the text-shadow; clean gold is more modern */
-    text-shadow: none; 
+    text-shadow: none;
 }
 
 .about-box p {
     line-height: 1.8;
-    color: #cbd5e0; /* Soft light-grey text for better readability on dark teal */
+    color: #cbd5e0;
+    /* Soft light-grey text for better readability on dark teal */
     font-family: 'Arial', sans-serif;
     font-size: 1.05rem;
 }
@@ -213,18 +229,19 @@ body {
 
 .top-info {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;               /* stack on smaller screens */
-    gap: 30px;                     /* space between boxes */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* stack on smaller screens */
+    gap: 30px;
+    /* space between boxes */
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
 .info-bracket {
     display: flex;
     flex-direction: column;
-    width: 300px; 
+    width: 300px;
     padding: 10px;
     justify-content: center;
     text-align: center;
@@ -232,7 +249,6 @@ body {
     border: 3px double rgb(255, 255, 255);
     border-radius: 15px;
 }
-
 
 .carousel::-webkit-scrollbar {
     display: none;
@@ -366,18 +382,18 @@ div.info-bracket {
     padding: 0;
     overflow: hidden;
     background-color: #0b757b;
-
 }
 
-.navclass{
+.navclass {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-
 }
+
 .navbar ul {
     list-style: none;
 }
+
 .navbar ul li {
     float: left;
     padding-right: 5px;
@@ -398,6 +414,7 @@ div.info-bracket {
     background-color: #77dad7;
     transform: translateY(-5px);
 }
+
 
 /* Table styles for genre list */
 

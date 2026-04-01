@@ -3,14 +3,12 @@ body {
     display: flex;
     height: 100%;
     margin: 0;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 body {
-    background-color: #a5e6e2;
-    
+    background-color: #f2b0a1;
 }
-
 
 .bg-pic {
     height: 500px;
@@ -75,15 +73,17 @@ body {
 .mid-section2{
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: center;
     font-family: 'Arial', sans-serif;
-    background:linear-gradient(180deg, #073B4C 0%, #052c39 100%);
+    background: #ff7a5c;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 400px;
+    min-height: 500px;
+    box-sizing: border-box;  /* Prevents horizontal scrollbars */
+    gap:20px;
 }
-
 
 .kpi-container {
     display: grid;
@@ -110,7 +110,7 @@ body {
   .kpi-number {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .kpi-label {
@@ -123,8 +123,10 @@ body {
 .table-box {
   display: inline-block;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
+  justify-content: center;
+  margin-bottom: 5px;
+  /*border-radius: 15px;*/
+  /*box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);*/
 }
 
 /* Table */
@@ -133,44 +135,39 @@ body {
   width: 400px;
 }
 
+.table-box h1{
+    color: white;
+}
+.table-box th,
+.table-box td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 3px solid #fcfcfc; /* thick line between rows */
+  color: white;
+}
+
 .table-box td {
   padding: 12px;
   text-align: center;
 }
 
 .table-box th {
-  background: #06f4f0;
-  color: rgb(141, 186, 222);
+  font-weight: bold;
+  font-size: 16px;
+  color: #f4f4f4;
 }
 
-.table-box td {
-  background: #4832b6;
-}
-
-.table-box :nth-child(even) td {
-  background: #0e7d9c;
-}
-
-.table-box tr:hover td {
-  background: #a9addd;
-  color: black;
-  transition: 0.3s;
-}
-
-/* Note */
-.note {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #666;
+.table-box tr:last-child td {
+  border-bottom: none;
 }
 
 .about-box {
     display: flex;
     flex-direction: column;
     /* Deep Teal Gradient */
-    background: linear-gradient(180deg, #073B4C 0%, #052c39 100%);
+    background: #1B2A49;
     /* Thin, crisp gold border */
-    border: 1.5px solid #D4AF37; 
+    border: 1.5px solid #ff7a5c; 
     padding: 40px;
     max-width: 600px;
     border-radius: 12px; /* Modern subtle roundness */
@@ -181,7 +178,7 @@ body {
 
 .about-box h2 {
     text-align: center;
-    color: #D4AF37; /* Gold heading */
+    color: #f1f1f1; /* Gold heading */
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -218,19 +215,43 @@ body {
     gap: 30px;                     /* space between boxes */
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 20px;
 
+}
+
+.top-info th {
+  padding: 8px;
+  text-align: left;
+  background-color: #1B2A49;
+  color: white;
+  font-weight: 600;
+}
+
+.top-info td {
+  padding: 6px 8px;
+}
+
+.top-info tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.top-info tr:hover {
+  background-color: rgba(0,0,0,0.05);
 }
 
 .info-bracket {
     display: flex;
     flex-direction: column;
-    width: 300px; 
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 3px double rgb(255, 255, 255);
-    border-radius: 15px;
+    width: 280px;
+    padding: 18px;
+    border-radius: 12px;
+
+    /* soft glass panel */
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+
+    /* subtle elevation instead of loud borders */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -241,7 +262,7 @@ body {
 
 .infinite_scroll {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1em;
     animation: move 60s infinite linear;
     animation-play-state: running;
@@ -325,6 +346,7 @@ body {
 /* Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
 
 main {
+    width: 100%;
     flex: 1;
     /* push footer down */
 }
@@ -341,14 +363,14 @@ main {
     }
 }
 
-div.info-bracket {
+/*div.info-bracket {
     border: 3px double rgb(255, 255, 255);
     max-width: 1000px;
     float: right;
     text-align: top left;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.5);
-}
+}*/
 
 .fix-float::after {
     content: "";
@@ -356,51 +378,9 @@ div.info-bracket {
     clear: both;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    border-radius: 40px;
-    width: 500px;
-    margin-bottom: 20px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0b757b;
-
-}
-
-.navclass{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-
-}
-.navbar ul {
-    list-style: none;
-}
-.navbar ul li {
-    float: left;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.navbar ul li a {
-    display: flex;
-    border-radius: 35px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.navbar ul li a:hover {
-    background-color: #77dad7;
-    transform: translateY(-5px);
-}
 
 /* Table styles for genre list */
-
+/*
 #GenreList {
     border-collapse: collapse;
     width: 300px;
@@ -428,4 +408,5 @@ div.info-bracket {
 
 #GenreList tr:hover {
     background-color: #e0e0e0;
-}
+}*/
+

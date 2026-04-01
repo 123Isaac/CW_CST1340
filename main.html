@@ -1,5 +1,5 @@
-<html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="foot_nav.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
 
     <body>
         <main>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
             <div class="bg-pic">
                 <div class="logo-nav">
@@ -27,15 +27,15 @@
                     </div>
 
                     <div class="logo">
-                        <img src="logo_no_bg.png" alt="logo">
+                        <img src="logo2.no_bg.png" alt="logo">
                     </div>
                 </div>
             </div>
             
             <div class="top-info">
                 <!--I removed floats because  my footer though page was empty-->
-                <div class="info-bracket" >
-                    <h3>Top Genres</h3>
+                <div class="info-bracket">
+                <h3>Top Genres</h3>
                     <table id="GenreList">
                     </table>
                 </div>
@@ -75,6 +75,7 @@
                 
             <div class="mid-section2">
                 <div class="table-box">
+                    <h1>Opening Hours</h1>
                 <table>
                     <tr>
                     <th>Day</th>
@@ -89,9 +90,6 @@
                     <tr><td>Sunday</td><td>Closed</td></tr>
                 </table>
 
-                <div class="note">
-                    * Hours may change during holidays
-                </div>
                 </div>
 
                 <div class="kpi-container">
@@ -292,12 +290,17 @@
             });
 
             // Create table HTML
-            var table = "<tr><th>Book Title</th><th>Books Sold</th></tr>";
+            var html = "";
             for (var i = 0; i < 10; i++) {
-                table += "<tr><td>" + bookSales[i].title + "</td><td>" + bookSales[i].sales + "</td></tr>";
+                html += `
+                    <div class="top-book">
+                        <span class="rank">${i+1}</span>
+                        <span class="title">${bookSales[i].title}</span>
+                        <span class="sales">${bookSales[i].sales}</span>
+                    </div>`;
             }
 
-            document.getElementById("BookList").innerHTML = table;
+            document.getElementById("BookList").innerHTML = html;
         }
     </script>
 

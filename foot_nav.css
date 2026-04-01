@@ -17,6 +17,10 @@
     margin-bottom: 20px;
 }
 
+.navbar ul{
+    list-style: none;
+}
+
 .navbar ul li {
     float: left;
     padding-right: 5px;

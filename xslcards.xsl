@@ -21,8 +21,10 @@
                         </ul>
                     </nav>
                 </div>
-                
-                <h1>Books</h1>
+
+                <center>
+                <h1 style="color:#0b757b; font-size: 60; text-align: center;">Books</h1>
+                </center>
                 <table>
                     <tr>
                         <td>

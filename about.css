@@ -1,124 +1,134 @@
 body {
-
-  font-family: Arial, sans-serif;
-  background-color: #f2b0a1;
-    
+    font-family: Arial, sans-serif;
+    background-color: #f2b0a1;
 }
-
-
 
 .book_card {
     display: flex;
-    flex-direction: column; /* stack image and text vertically */
+    flex-direction: column;
+    /* stack image and text vertically */
     align-items: center;
-    width: 220px; /* slightly bigger */
+    width: 220px;
+    /* slightly bigger */
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    
 }
 
 .book_card:hover {
-    box-shadow: 0 0 25px rgba(126, 231, 135, 0.7); /* stronger hover glow */
-    transform: translateY(-5px); /* subtle hover effect */
-} 
-
-.about-section{
-  display: flex;
-  justify-content: center;
+    box-shadow: 0 0 25px rgba(126, 231, 135, 0.7);
+    /* stronger hover glow */
+    transform: translateY(-5px);
+    /* subtle hover effect */
 }
 
+.about-section {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* About Box */
+
 .about-box {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  max-width: 600px;
-  border-radius: 15px;
-  background-color: #1B2A49;
-  border: 1px solid #9ca5e4;
-  transition: transform 0.2s;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 600px;
+    border-radius: 15px;
+    background-color: #1B2A49;
+    border: 1px solid #9ca5e4;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
 }
 
 .about-box h2 {
-  text-align: center;
-  color: white;
-  font-family: 'Georgia', serif;
-  margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
 }
 
 .about-box p {
-  line-height: 1.8;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: medium;
+    line-height: 1.8;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
+
 
 /* Hover */
+
 .about-box:hover {
-  box-shadow: 0 0 25px rgba(61, 150, 228, 0.7); /* stronger hover glow */
-  transform: translateY(-5px); 
+    box-shadow: 0 0 25px rgba(61, 150, 228, 0.7);
+    /* stronger hover glow */
+    transform: translateY(-5px);
 }
 
+
 /* Section */
+
 .section {
-  text-align: center;
-  padding: 50px 20px;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .section h1 {
-  color: #5b177a;
-  font-size: 36px;
+    color: #5b177a;
+    font-size: 36px;
 }
+
 
 /* Table Box */
+
 .table-box {
-  display: inline-block;
-  padding: 20px;
-  border-radius: 15px;
-  background: #09b6f0;
-  box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+    background: #09b6f0;
+    box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
 }
+
 
 /* Table */
+
 table {
-  border-collapse: collapse;
-  width: 400px;
+    border-collapse: collapse;
+    width: 400px;
 }
 
-th, td {
-  padding: 12px;
-  text-align: center;
+th,
+td {
+    padding: 12px;
+    text-align: center;
 }
 
 th {
-  background: #06f4f0;
-  color: rgb(141, 186, 222);
+    background: #06f4f0;
+    color: rgb(141, 186, 222);
 }
 
 td {
-  background: #4832b6;
+    background: #4832b6;
 }
 
 tr:nth-child(even) td {
-  background: #0e7d9c;
+    background: #0e7d9c;
 }
 
 tr:hover td {
-  background: #a9addd;
-  color: black;
-  transition: 0.3s;
+    background: #a9addd;
+    color: black;
+    transition: 0.3s;
 }
 
-
-.about-info-box{
+.about-info-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     border-radius: 15px;
-    background-color:#1B2A49;
+    background-color: #1B2A49;
     border: 1px solid #9ca5e4;
     transition: transform 0.2s;
     padding-bottom: 30px;
@@ -126,20 +136,21 @@ tr:hover td {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 .about-info-box h1 {
     color: white;
     font-family: 'Georgia', serif;
 }
+
 .about-info-box p {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     text-align: center;
 }
+
 .about-info-box:hover {
-    box-shadow: 0 0 25px rgba(96, 139, 233, 0.7); /* stronger hover glow */
-    transform: translateY(-5px); 
+    box-shadow: 0 0 25px rgba(96, 139, 233, 0.7);
+    /* stronger hover glow */
+    transform: translateY(-5px);
 }
- 
-
-

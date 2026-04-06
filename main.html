@@ -8,11 +8,55 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="foot_nav.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <style>
+        .top-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+
+        .top-info th {
+            padding: 8px;
+            background-color: #1B2A49;
+            color: white;
+            font-weight: 600;
+        }
+
+        .top-info td {
+            padding: 6px 8px;
+        }
+
+        .top-info tr {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .top-info tr:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .info-bracket {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 18px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
     </head>
 
     <body>
+        
         <main>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
         <div class="bg-pic">
             <div class="logo-nav">
@@ -33,14 +77,13 @@
             </div>
             
         <div class="top-info">
-            <!--I removed floats because  my footer though page was empty-->
             <div class="info-bracket">
-                <h3>Top Genres</h3>
+                <h3 >Top Genres</h3>
                 <table id="GenreList">
                 </table>
             </div>
 
-            </table>
+            
             <div class="info-bracket">
                 <h3>Top Selling Books</h3>
                 <table id="BookList">
@@ -51,7 +94,11 @@
 
         <div class="mid-section">
             <div class="animation">
-                <lottie-player src="Girl_books.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                <lottie-player src="Girl_books.json" 
+                background="transparent" 
+                speed="0.4" 
+                style="width: 300px; height: 300px;" 
+                loop autoplay>
                 </lottie-player>
             </div>
 

@@ -1,12 +1,10 @@
 .navbar {
     display: flex;
     justify-content: center;
-    list-style-type: none;
     border-radius: 40px;
     width: 500px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #0b757b;
 }
 
@@ -18,11 +16,12 @@
 }
 
 .navbar ul{
+    display: flex;
     list-style: none;
+     
 }
 
 .navbar ul li {
-    float: left;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -77,6 +76,16 @@
 .wrapper1 .button:hover {
     width: 200px;
 }
+.wrapper1 .button span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    white-space: nowrap;
+    opacity: 0;                /* hide initially */
+    transition: opacity 0.4s ease;
+}
+
+
 .wrapper1 .button:hover span {
     padding-right: 20px;
     opacity: 1;           /* make the text visible */
@@ -98,14 +107,6 @@
     line-height: 60px;
 }
 
-.wrapper1 .button span {
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: 10px;
-    white-space: nowrap;
-    opacity: 0;                /* hide initially */
-    transition: opacity 0.4s ease;
-}
 
 footer {
     background-color: #0b757b;
@@ -179,6 +180,6 @@ footer {
     padding-top: 20px;
     text-align: center;
     font-size: 14px;
-    color: #a8caba; /* Using a softer color from your palette */
+    color: #a8caba; /* Using a softer color */
     letter-spacing: 1px;
 }

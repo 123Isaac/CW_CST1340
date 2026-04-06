@@ -6,7 +6,6 @@ body {
 }
 
 
-
 .book_card {
     display: flex;
     flex-direction: column; /* stack image and text vertically */

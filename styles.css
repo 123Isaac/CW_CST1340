@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* centers all children horizontally */
     margin-bottom: 30px;
     width: 100%;
 }
@@ -35,14 +34,10 @@ body {
 }
 
 .logo img {
-    height: 100%;
-    /* fill container height */
-    width: auto;
-    /* maintain aspect ratio */
+    height: 100%;/* fill container height */
+    width: auto;/* maintain aspect ratio */
     object-fit: contain;
-    /* ensures image isn’t stretched */
-    filter: brightness(150%);
-    /*filter: brightness(1.5) contrast(1.2); /* optional: makes it whiter/brighter */
+    filter: brightness(150%);/*manipulate brightness*/
 }
 
 .bg-pic::after {
@@ -65,9 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Vertically aligns the animation with text/content */
     gap: 50px;
-    /* Adjust this number for more or less space */
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -76,23 +69,17 @@ body {
     max-height: 300px;
 }
 
-.animation {
-    display: flex;
-    flex-direction: column;
-}
 
 .mid-section2 {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    font-family: 'Arial', sans-serif;
-    background: #ff7a5c;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #ff7a5c;
     min-height: 500px;
-    box-sizing: border-box;  /* Prevents horizontal scrollbars */
+    box-sizing: border-box;
     gap:20px;
 }
 
@@ -137,12 +124,7 @@ body {
   padding: 20px;
   justify-content: center;
   margin-bottom: 5px;
-  /*border-radius: 15px;*/
-  /*box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);*/
 }
-
-
-/* Table */
 
 .table-box table {
     border-collapse: collapse;
@@ -160,15 +142,9 @@ body {
   color: white;
 }
 
-.table-box td {
-    padding: 12px;
-    text-align: center;
-}
-
 .table-box th {
   font-weight: bold;
   font-size: 16px;
-  color: #f4f4f4;
 }
 
 .table-box tr:last-child td {
@@ -178,14 +154,11 @@ body {
 .about-box {
     display: flex;
     flex-direction: column;
-    /* Deep Teal Gradient */
     background: #1B2A49;
-    /* Thin, crisp gold border */
     border: 1.5px solid #ff7a5c; 
     padding: 40px;
     max-width: 600px;
     border-radius: 12px;
-    /* Modern subtle roundness */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     color: #f1f1f1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -193,26 +166,23 @@ body {
 
 .about-box h2 {
     text-align: center;
-    color: #f1f1f1; /* Gold heading */
+    color: #f1f1f1; 
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    /* Remove the text-shadow; clean gold is more modern */
     text-shadow: none;
 }
 
 .about-box p {
     line-height: 1.8;
     color: #cbd5e0;
-    /* Soft light-grey text for better readability on dark teal */
     font-family: 'Arial', sans-serif;
     font-size: 1.05rem;
 }
 
 .about-box:hover {
     transform: translateY(-8px);
-    /* Slight gold glow on hover */
     box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
 }
 
@@ -220,61 +190,12 @@ body {
     display: flex;
     background: #ff7a5c;
     height: 260px;
-    overflow-x: auto;
-    /*makes carousel scrollable*/
+    overflow-x: auto;/*makes carousel scrollable*/
 }
 
-.top-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* stack on smaller screens */
-    gap: 30px;
-    /* space between boxes */
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-
-}
-
-.top-info th {
-  padding: 8px;
-  text-align: left;
-  background-color: #1B2A49;
-  color: white;
-  font-weight: 600;
-}
-
-.top-info td {
-  padding: 6px 8px;
-}
-
-.top-info tr {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.top-info tr:hover {
-  background-color: rgba(0,0,0,0.05);
-}
-
-.info-bracket {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    padding: 18px;
-    border-radius: 12px;
-
-    /* soft glass panel */
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(6px);
-
-    /* subtle elevation instead of loud borders */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
 
 .carousel::-webkit-scrollbar {
-    display: none;
-    /*hide scrollbar*/
+    display: none;/*hide scrollbar*/
 }
 
 .infinite_scroll {
@@ -296,28 +217,19 @@ body {
     position: relative;
     border-radius: 15px;
     overflow: visible;
-    /* allow tooltip to escape card */
-    /*ensure images take card shape*/
-    color: aliceblue;
     height: 250px;
     width: 160px;
-    background-color: bisque;
 }
 
 .card img {
     border-radius: 15px;
-    /* preserve rounded corners when overflow is visible */
     width: 100%;
-    /* fill the card */
     height: 100%;
-    /* maintain card shape */
     object-fit: cover;
-    /* crop nicely without stretching */
 }
 
 .card img:hover {
     transform: scale(1.05);
-    /* slight zoom on hover */
     transition: transform 0.3s ease;
 }
 
@@ -380,51 +292,5 @@ main {
     }
 }
 
-/*div.info-bracket {
-    border: 3px double rgb(255, 255, 255);
-    max-width: 1000px;
-    float: right;
-    text-align: top left;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-}*/
 
-.fix-float::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-/* Table styles for genre list */
-/*
-#GenreList {
-    border-collapse: collapse;
-    width: 300px;
-    margin: 10px 0;
-}
-
-#GenreList th,
-#GenreList td {
-    padding: 8px 12px;
-    text-align: left;
-    border: 2px solid #ddd;
-    border-radius: 35px;
-}
-
-#GenreList th {
-    width: 300px;
-    border-radius: 35px;
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
-#GenreList tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#GenreList tr:hover {
-    background-color: #e0e0e0;
-}*/
 

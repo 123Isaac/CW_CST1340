@@ -12,16 +12,13 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    /* center cards  */
 }
 
 .book_card {
     display: flex;
     flex-direction: column;
-    /* stack image and text vertically */
     align-items: center;
     width: 220px;
-    /* slightly bigger */
     border-radius: 15px;
     padding: 10px;
     text-align: center;
@@ -31,58 +28,39 @@ body {
 }
 
 .book_card:hover {
-    box-shadow: 0 0 25px #77dad7; /* stronger hover glow */
-    transform: translateY(-5px); /* subtle hover effect */
+    box-shadow: 0 0 25px #77dad7;
+    transform: translateY(-5px); 
 } 
 
 .pic img {
     width: 180px;
     height: 280px;
-    /* maintain book proportions */
     object-fit: cover;
-    /* crop nicely if image ratio varies */
     border-radius: 10px;
     margin-bottom: 10px;
 }
 .category{
     display:flex;
-    background-color: #0b757b;
-    border: 2px solid #77dad7;
-    border-radius: 20px;
-    width: 250px;
-    height: 60px;
-    padding-top: 15px;
-    color: azure;
-    margin-bottom: 20px
 }
+
 .category,
 .price-filter {
     background-color: #0b757b;
     border: 2px solid #77dad7;
     border-radius: 20px;
     width: 260px;
+    height: 60px;
     padding: 10px;
     color: white;
-}
-
-#categoryFilter {
-    background-color: #ff7a5c;
-    border-radius: 20px;
-    color: white;
-
-}
-#AuthorFilter{
-    background-color: #ff7a5c;
-    border-radius: 20px;
-    color: white;
-}
-.price-filter{
-    border-radius: 20px;
-    width: 280px;
-    height: 60px;
-    padding-top: 15px;
-    color: azure;
     margin-bottom: 20px
+}
+
+#categoryFilter, #AuthorFilter {
+    background-color: #ff7a5c;
+    border-radius: 20px;
+    color: white;
+    margin: 0 0 20px 10px;
+
 }
 
 .price-slider {
@@ -90,13 +68,11 @@ body {
     appearance: none;
 }
 
-/* the line (track) */
 .price-slider::-webkit-slider-runnable-track {
     background: #ff7a5c;
     height: 6px;
 }
 
-/* the circle (thumb) */
 .price-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     background: #77dad7;
@@ -106,19 +82,11 @@ body {
     margin-top: -4px;
 }
 
-#price-filter{
-    border-radius: 20px;
-    padding: 8px 12px;
-    border: 2px solid #77dad7;
-    background-color: #77dad7;
-    color: white;
-}
 
 .book_card h2 {
     font-size: 1.1rem;
     margin: 5px 0;
     height: 40px;
-    /* limit title height to avoid stretching */
     color: white;
     overflow: hidden;
 }
@@ -129,60 +97,3 @@ body {
     color: #e0f7f6;
 }
 
-.slidecontainer {
-    display: flex;
-    background-color: #177244;
-    border: 2px solid #38b174;
-    border-radius: 20px;
-    width: 250px;
-    padding-top: 15px;
-    color: azure;
-    margin-bottom: 20px
-}
-
-.slider {
-    -webkit-appearance: none;
-    /* Override default CSS styles */
-    appearance: none;
-    width: 100%;
-    height: 25px;
-    background: #9ff794;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-
-/* Mouse-over effects */
-
-.slider:hover {
-    opacity: 1;
-    /* Fully shown on mouse-over */
-}
-
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    /* Override default look */
-    appearance: none;
-    width: 25px;
-    /*slider handle width */
-    height: 25px;
-    /* Slider handle height */
-    background: #04AA6D;
-    /* Green background */
-    cursor: pointer;
-    /* Cursor on hover */
-}
-
-.slider::-moz-range-thumb {
-    width: 25px;
-    /* specific slider handle width */
-    height: 25px;
-    /* Slider handle height */
-    background: #04AA6D;
-    cursor: pointer;
-}

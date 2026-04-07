@@ -5,14 +5,18 @@ body {
     margin: 0;
     flex-direction: column;    
 }
-
+main {
+    width: 100%;
+    flex: 1;
+    /* push footer down */
+}
 body {
     background-color: #f2b0a1;
 }
 
 .bg-pic {
     height: 500px;
-    background-image: url('library.jpg');
+    background-image: url('logo&anm/library.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -274,11 +278,6 @@ body {
 
 /* Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
 
-main {
-    width: 100%;
-    flex: 1;
-    /* push footer down */
-}
 
 @keyframes BackDrop {
     0% {

@@ -22,20 +22,19 @@
                     </nav>
                 </div>
 
-                <center>
                 <h1 style="color:#0b757b; font-size: 60; text-align: center;">Books</h1>
-                </center>
+
                 <table>
                     <tr>
                         <td>
                             <div class="search-container">
-                                <input type="text" id="searchInput" placeholder="Search by title..." style="padding: 5px; width: 200px; margin-bottom: 20px;"></input>
+                                <input type="text" id="searchInput" placeholder="Search by title..." style="height: 35px;"></input>
                             </div>
                         </td>
                         <td>
                             <div class="category">
                                 <label for="categoryFilter">Select category:</label>
-                                <select id="categoryFilter" style="margin: 0 0 20px 10px;">
+                                <select id="categoryFilter" >
                                     <option value="">All categories</option>
                                     <xsl:for-each select="/bookstore/categories/category">
                                         <option value="{@id}"><xsl:value-of select="."/></option>
@@ -46,7 +45,7 @@
                         <td>
                             <div class="category">
                                 <label for="Author">Select Author:</label>
-                                <select id="AuthorFilter" style="margin: 0 0 20px 10px;">
+                                <select id="AuthorFilter">
                                     <option value="">Any</option>
                                     <xsl:for-each select="/bookstore/books/book/author[not(.=preceding::book/author)]">
                                         <option value='{.}'><xsl:value-of select="."/></option>
@@ -57,7 +56,7 @@
                         <td>
                             <div class="price-filter" style="margin-bottom: 20px;">
                                 <label for="priceRange">Max price: $<span id="priceValue">35.00</span></label>
-                                <input type="range" min="10" max="35" value="35" step="0.5" id="priceRange" style="width: 250px; margin-left: 10px;" class="price-slider"/>
+                                <input type="range" min="10" max="35" value="35" step="0.5" id="priceRange" class="price-slider"/>
                             </div>
                         </td>
                     </tr>

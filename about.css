@@ -3,30 +3,10 @@ body {
     background-color: #f2b0a1;
 }
 
-.book_card {
-    display: flex;
-    flex-direction: column;
-    /* stack image and text vertically */
-    align-items: center;
-    width: 220px;
-    /* slightly bigger */
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-}
-
-.book_card:hover {
-    box-shadow: 0 0 25px rgba(126, 231, 135, 0.7);
-    /* stronger hover glow */
-    transform: translateY(-5px);
-    /* subtle hover effect */
-}
-
 .about-section {
     display: flex;
     justify-content: center;
 }
-
 
 /* About Box */
 
@@ -57,7 +37,6 @@ body {
 }
 
 
-/* Hover */
 
 .about-box:hover {
     box-shadow: 0 0 25px rgba(61, 150, 228, 0.7);
@@ -65,62 +44,6 @@ body {
     transform: translateY(-5px);
 }
 
-
-/* Section */
-
-.section {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.section h1 {
-    color: #5b177a;
-    font-size: 36px;
-}
-
-
-/* Table Box */
-
-.table-box {
-    display: inline-block;
-    padding: 20px;
-    border-radius: 15px;
-    background: #09b6f0;
-    box-shadow: 0 0 15px rgba(16, 72, 84, 0.3);
-}
-
-
-/* Table */
-
-table {
-    border-collapse: collapse;
-    width: 400px;
-}
-
-th,
-td {
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background: #06f4f0;
-    color: rgb(141, 186, 222);
-}
-
-td {
-    background: #4832b6;
-}
-
-tr:nth-child(even) td {
-    background: #0e7d9c;
-}
-
-tr:hover td {
-    background: #a9addd;
-    color: black;
-    transition: 0.3s;
-}
 
 .about-info-box {
     display: flex;

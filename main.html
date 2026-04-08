@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="foot_nav.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-   <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="foot_nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
         .top-info {
             display: flex;
             justify-content: center;
@@ -20,25 +20,26 @@
             margin-right: 50px;
             margin-top: 20px;
         }
-
+        
         .top-info th {
             padding: 8px;
             background-color: #1B2A49;
             color: white;
             font-weight: 600;
         }
-
+        
         .top-info td {
             padding: 6px 8px;
         }
-
+        
         .top-info tr {
-            border-bottom: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
-
+        
         .top-info tr:hover {
-            background-color: rgba(0,0,0,0.05);
+            background-color: rgba(0, 0, 0, 0.05);
         }
+        
         .info-bracket {
             display: flex;
             flex-direction: column;
@@ -51,11 +52,11 @@
         }
     </style>
 
-    </head>
+</head>
 
-    <body>
-        
-        <main>
+<body>
+
+    <main>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
         <div class="bg-pic">
@@ -70,20 +71,20 @@
                     </nav>
                 </div>
 
-                    <div class="logo">
-                        <img src="Logo&anm/logo2.no_bg.png" alt="logo">
-                    </div>
+                <div class="logo">
+                    <img src="Logo&anm/logo2.no_bg.png" alt="logo">
                 </div>
             </div>
-            
+        </div>
+
         <div class="top-info">
             <div class="info-bracket">
-                <h3 >Top Genres</h3>
+                <h3>Top Genres</h3>
                 <table id="GenreList">
                 </table>
             </div>
 
-            
+
             <div class="info-bracket">
                 <h3>Top Selling Books</h3>
                 <table id="BookList">
@@ -94,11 +95,7 @@
 
         <div class="mid-section">
             <div class="animation">
-                <lottie-player src="Logo&anm/Girl_books.json" 
-                background="transparent" 
-                speed="0.4" 
-                style="width: 300px; height: 300px;" 
-                loop autoplay>
+                <lottie-player src="Logo&anm/Girl_books.json" background="transparent" speed="0.4" style="width: 300px; height: 300px;" loop autoplay>
                 </lottie-player>
             </div>
 
@@ -113,10 +110,10 @@
                 </p>
             </div>
         </div>
-                
-            <div class="mid-section2">
-                <div class="table-box">
-                    <h1>Opening Hours</h1>
+
+        <div class="mid-section2">
+            <div class="table-box">
+                <h1>Opening Hours</h1>
                 <table>
                     <tr>
                         <th>Day</th>
@@ -152,9 +149,9 @@
                     </tr>
                 </table>
 
-                </div>
+            </div>
 
-                
+
             <div class="kpi-container">
                 <div class="kpi">
                     <span class="kpi-icon"><i class="fa fa-book"></i></span>
@@ -332,7 +329,7 @@
         var books = xmlDoc.getElementsByTagName("book");
         var bookSales = [];
 
-        // Aggregate sales for each book
+        // calc sales for each book
         for (var i = 0; i < books.length; i++) {
             var book = books[i];
             var title = book.getElementsByTagName("title")[0].textContent;
@@ -343,12 +340,10 @@
             });
         }
 
-        // Sort by sales
         bookSales.sort(function(a, b) {
             return b.sales - a.sales;
         });
 
-        // Create table HTML
         var table = "<tr><th>Book Title</th><th>Books Sold</th></tr>";
         for (var i = 0; i < 10; i++) {
             table += "<tr><td>" + bookSales[i].title + "</td><td>" + bookSales[i].sales + "</td></tr>";
@@ -358,4 +353,4 @@
     }
 </script>
 
-    </html>
+</html>

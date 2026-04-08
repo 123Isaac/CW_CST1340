@@ -3,13 +3,15 @@ body {
     display: flex;
     height: 100%;
     margin: 0;
-    flex-direction: column;    
+    flex-direction: column;
 }
+
 main {
     width: 100%;
     flex: 1;
     /* push footer down */
 }
+
 body {
     background-color: #f2b0a1;
 }
@@ -38,10 +40,13 @@ body {
 }
 
 .logo img {
-    height: 100%;/* fill container height */
-    width: auto;/* maintain aspect ratio */
+    height: 100%;
+    /* fill container height */
+    width: auto;
+    /* maintain aspect ratio */
     object-fit: contain;
-    filter: brightness(150%);/*manipulate brightness*/
+    filter: brightness(150%);
+    /*manipulate brightness*/
 }
 
 .bg-pic::after {
@@ -73,7 +78,6 @@ body {
     max-height: 300px;
 }
 
-
 .mid-section2 {
     display: flex;
     flex-direction: row;
@@ -84,7 +88,7 @@ body {
     background: #ff7a5c;
     min-height: 500px;
     box-sizing: border-box;
-    gap:20px;
+    gap: 20px;
 }
 
 .kpi-container {
@@ -113,7 +117,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
+}
 
 .kpi-label {
     font-size: 14px;
@@ -124,10 +128,10 @@ body {
 /* Table Box */
 
 .table-box {
-  display: inline-block;
-  padding: 20px;
-  justify-content: center;
-  margin-bottom: 5px;
+    display: inline-block;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 .table-box table {
@@ -135,31 +139,33 @@ body {
     width: 400px;
 }
 
-.table-box h1{
+.table-box h1 {
     color: white;
 }
+
 .table-box th,
 .table-box td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 3px solid #fcfcfc; /* thick line between rows */
-  color: white;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 3px solid #fcfcfc;
+    /* thick line between rows */
+    color: white;
 }
 
 .table-box th {
-  font-weight: bold;
-  font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .table-box tr:last-child td {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .about-box {
     display: flex;
     flex-direction: column;
     background: #1B2A49;
-    border: 1.5px solid #ff7a5c; 
+    border: 1.5px solid #ff7a5c;
     padding: 40px;
     max-width: 600px;
     border-radius: 12px;
@@ -170,7 +176,7 @@ body {
 
 .about-box h2 {
     text-align: center;
-    color: #f1f1f1; 
+    color: #f1f1f1;
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -194,12 +200,13 @@ body {
     display: flex;
     background: #ff7a5c;
     height: 260px;
-    overflow-x: auto;/*makes carousel scrollable*/
+    overflow-x: auto;
+    /*makes carousel scrollable*/
 }
 
-
 .carousel::-webkit-scrollbar {
-    display: none;/*hide scrollbar*/
+    display: none;
+    /*hide scrollbar*/
 }
 
 .infinite_scroll {
@@ -277,19 +284,3 @@ body {
 
 
 /* Reference: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=1s*/
-
-
-@keyframes BackDrop {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-
